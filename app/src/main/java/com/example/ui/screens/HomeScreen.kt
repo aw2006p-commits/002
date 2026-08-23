@@ -83,7 +83,6 @@ import com.example.R
 import com.example.data.model.Lesson
 import com.example.data.model.LessonCategory
 import com.example.data.model.SeriesInfo
-import com.example.data.model.SheikhData
 import com.example.ui.components.LessonItemCard
 import com.example.ui.components.ShareQuoteDialog
 import com.example.ui.theme.GoldGradient
@@ -125,7 +124,7 @@ fun HomeScreen(
     val clipboardManager = LocalClipboardManager.current
     val context = LocalContext.current
     val focusManager = LocalFocusManager.current
-    val dailyQuote = SheikhData.quotes.firstOrNull()
+    val dailyQuote = uiState.filteredQuotes.firstOrNull()
 
     var searchQuery by remember { mutableStateOf("") }
     var selectedFilterTab by remember { mutableIntStateOf(0) } // 0: الكل, 1: السلاسل, 2: الدروس
@@ -138,7 +137,7 @@ fun HomeScreen(
     val matchingSeries = remember(trimmedQuery) {
         if (trimmedQuery.isEmpty()) emptyList()
         else {
-            SheikhData.seriesList.filter { series ->
+            uiState.seriesList.filter { series ->
                 series.title.contains(trimmedQuery, ignoreCase = true) ||
                         series.description.contains(trimmedQuery, ignoreCase = true)
             }
@@ -148,7 +147,7 @@ fun HomeScreen(
     val matchingLessons = remember(trimmedQuery) {
         if (trimmedQuery.isEmpty()) emptyList()
         else {
-            SheikhData.allLessons.filter { lesson ->
+            uiState.allLessons.filter { lesson ->
                 lesson.title.contains(trimmedQuery, ignoreCase = true) ||
                         lesson.series.contains(trimmedQuery, ignoreCase = true) ||
                         lesson.description.contains(trimmedQuery, ignoreCase = true) ||
@@ -1098,7 +1097,7 @@ fun HomeScreen(
 
             // Quiz Spotlight Card (ركن التمكين وتثبيت المحفوظ)
             item {
-                val featuredLesson = SheikhData.allLessons.firstOrNull()
+                val featuredLesson = uiState.allLessons.firstOrNull()
                 if (featuredLesson != null) {
                     val quizRes = uiState.quizResults[featuredLesson.id]
                     Card(
