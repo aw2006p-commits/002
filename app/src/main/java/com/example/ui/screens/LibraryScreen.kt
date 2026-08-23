@@ -50,7 +50,6 @@ import androidx.compose.ui.unit.sp
 import com.example.data.local.PlayHistoryEntity
 import com.example.data.model.Lesson
 import com.example.data.model.SeriesInfo
-import com.example.data.model.SheikhData
 import com.example.ui.components.LessonItemCard
 import com.example.ui.theme.NaturalAccentGold
 import com.example.ui.theme.NaturalCardBg
@@ -74,7 +73,7 @@ data class SeriesProgress(
 )
 
 fun calculateSeriesProgress(seriesTitle: String, playHistory: List<PlayHistoryEntity>): SeriesProgress {
-    val seriesLessons = SheikhData.allLessons.filter { it.series == seriesTitle }
+    val seriesLessons = uiState.allLessons.filter { it.series == seriesTitle }
     val totalCount = if (seriesLessons.isNotEmpty()) seriesLessons.size else 1
     val historyMap = playHistory.associateBy { it.lessonId }
     
@@ -118,7 +117,7 @@ fun LibraryScreen(
     var selectedSeriesTitle by remember { mutableStateOf<String?>(null) }
 
     val seriesProgressMap = remember(uiState.playHistory) {
-        SheikhData.seriesList.associate { series ->
+        uiState.seriesList.associate { series ->
             series.title to calculateSeriesProgress(series.title, uiState.playHistory)
         }
     }
@@ -179,7 +178,7 @@ fun LibraryScreen(
 
         if (selectedSeriesTitle == null) {
             // Display all Series Cards with Progress Indicators
-            items(SheikhData.seriesList) { series ->
+            items(uiState.seriesList) { series ->
                 val progress = seriesProgressMap[series.title] ?: SeriesProgress(
                     totalLessons = series.lessonsCount,
                     completedLessons = 0,
@@ -195,8 +194,8 @@ fun LibraryScreen(
             }
         } else {
             // Series Detail Header with Big Progress Bar
-            val seriesInfo = SheikhData.seriesList.find { it.title == selectedSeriesTitle }
-            val seriesLessons = SheikhData.allLessons.filter { it.series == selectedSeriesTitle }
+            val seriesInfo = uiState.seriesList.find { it.title == selectedSeriesTitle }
+            val seriesLessons = uiState.allLessons.filter { it.series == selectedSeriesTitle }
             val progress = seriesProgressMap[selectedSeriesTitle] ?: calculateSeriesProgress(selectedSeriesTitle ?: "", uiState.playHistory)
 
             if (seriesInfo != null) {
