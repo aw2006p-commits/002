@@ -14,10 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.ui.viewmodel.SheikhViewModel
 
 @Composable
-fun SheikhAppRoot(viewModel: SheikhViewModel) {
+fun SheikhAppRoot() {
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Box(
             modifier = Modifier
@@ -31,7 +30,7 @@ fun SheikhAppRoot(viewModel: SheikhViewModel) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "🎉 مرحباً بك!",
+                    text = "🎉 Welcome!",
                     style = TextStyle(
                         fontSize = 32.sp,
                         color = MaterialTheme.colorScheme.primary
@@ -39,18 +38,10 @@ fun SheikhAppRoot(viewModel: SheikhViewModel) {
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
                 Text(
-                    text = "التطبيق يعمل بنجاح ✅",
+                    text = "App is running successfully ✅",
                     style = TextStyle(
                         fontSize = 20.sp,
                         color = MaterialTheme.colorScheme.onSurface
-                    ),
-                    modifier = Modifier.padding(bottom = 8.dp)
-                )
-                Text(
-                    text = "تم إنشاء التطبيق بنجاح مع Compose",
-                    style = TextStyle(
-                        fontSize = 16.sp,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 )
             }
