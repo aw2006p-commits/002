@@ -1,0 +1,4355 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-22",
+  "scholarProfile": {
+    "id": "sheikh_samir_mustafa",
+    "name": "الشيخ سمير مصطفى",
+    "title": "الداعية والمربي الإسلامي",
+    "kunya": "أبو أنس",
+    "biography": "داعية إسلامي مصري، عُرف بأسلوبه المؤثر البليغ في الوعظ والتزكية وشرح كتب التراث والسيرة النبوية وتربية القلوب على التوحيد والإخلاص.",
+    "birthPlace": "القاهرة، مصر",
+    "primaryFields": [
+      "السيرة النبوية والتاريخ الإسلامي",
+      "التزكية والرقائق وأعمال القلوب",
+      "العقيدة وفقه الابتلاء",
+      "التفسير والتدبر القرآني",
+      "الخطابة والدعوة"
+    ],
+    "totalRecordedLessons": 130,
+    "totalSeries": 15,
+    "officialLinks": {
+      "website": "https://sheikhsmr.click",
+      "audioArchive": "https://way2allah.com"
+    }
+  },
+  "topics": [
+    {
+      "id": "seerah_maghazi",
+      "name": "السيرة النبوية والمغازي",
+      "nameEnglish": "Seerah & Islamic History",
+      "description": "دراسة شاملة لحياة النبي ﷺ، شمائله، وغزوات الإسلام والفتوحات الكبرى.",
+      "iconEmoji": "🕌",
+      "colorHex": "#4A5B36",
+      "seriesCount": 2
+    },
+    {
+      "id": "tazkiyah_khawatir",
+      "name": "تزكية النفوس والرقائق",
+      "nameEnglish": "Spiritual Purification",
+      "description": "إحياء القلوب، أعمال القلوب، التخلص من أمراض الصدور، وذكر الله الدائم.",
+      "iconEmoji": "🌙",
+      "colorHex": "#7B5E38",
+      "seriesCount": 3
+    },
+    {
+      "id": "aqeedah_tawheed",
+      "name": "العقيدة وفقه الابتلاء",
+      "nameEnglish": "Creed & Trials",
+      "description": "ترسيخ التوحيد والصمدية، حسن الظن بالله، وعقائد الصبر عند نزول البلاء.",
+      "iconEmoji": "🛡️",
+      "colorHex": "#3D5A6C",
+      "seriesCount": 2
+    },
+    {
+      "id": "tafseer_tadabbur",
+      "name": "التفسير والتدبر القرآني",
+      "nameEnglish": "Quran Exegesis",
+      "description": "تأملات عقدية وتربوية في سور وآيات القرآن الكريم ودساتير الأخلاق.",
+      "iconEmoji": "📖",
+      "colorHex": "#2D6A4F",
+      "seriesCount": 1
+    },
+    {
+      "id": "khutbah_waaz",
+      "name": "الخطب والمواعظ",
+      "nameEnglish": "Sermons & Exhortations",
+      "description": "خطب الجمعة والمواعظ المنبرية المؤثرة في الإنابة والتوبة والدار الآخرة.",
+      "iconEmoji": "🎙️",
+      "colorHex": "#8B4513",
+      "seriesCount": 1
+    }
+  ],
+  "bookExplanations": [
+    {
+      "id": "book_wabil",
+      "bookTitle": "الوابل الصيب من الكلم الطيب",
+      "originalAuthor": "الإمام ابن قيم الجوزية",
+      "field": "الرقائق والذكر والتزكية",
+      "summary": "كتاب فريد في فضل الذكر وثمراته وأسراره وأثره في حياة القلوب ودفع الشياطين.",
+      "explanationSeriesId": "series_wabil"
+    },
+    {
+      "id": "book_fawaid",
+      "bookTitle": "الفوائد",
+      "originalAuthor": "الإمام ابن قيم الجوزية",
+      "field": "السلوك ومعالم طريق الهداية",
+      "summary": "خواطر ولطائف عقدية وإيمانية عميقة في تشخيص أمراض القلوب وصياغة الطريق إلى الله.",
+      "explanationSeriesId": "series_tariq"
+    },
+    {
+      "id": "book_tawheed",
+      "bookTitle": "كتاب التوحيد الذي هو حق الله على العبيد",
+      "originalAuthor": "الإمام محمد بن عبد الوهاب",
+      "field": "العقيدة والتوحيد",
+      "summary": "بيان حقيقة توحيد العبادة والأسماء والصفات وأثر التوحيد الصافي في مغفرة الذنوب.",
+      "explanationSeriesId": "series_fiqh_aqeedah"
+    }
+  ],
+  "seriesList": [
+    {
+      "id": "series_seerah",
+      "title": "سلسلة سيرة النبي ﷺ",
+      "topicId": "seerah_maghazi",
+      "bookId": null,
+      "description": "رحلة إيمانية عاطرة ومفصلة في سيرة الحبيب المصطفى ﷺ من الميلاد إلى الوفاة.",
+      "totalEpisodes": 13,
+      "isCompleted": true,
+      "coverEmoji": "🕌",
+      "recordingPeriod": "2011 - 2013",
+      "primaryLocation": "مسجد بلال بن رباح - القاهرة",
+      "lessons": [
+        {
+          "id": "seerah_01",
+          "episodeNumber": 1,
+          "title": "المجلس الأول: ميلاد المصطفى ﷺ ونشأته ورضاعته",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2400,
+          "durationFormatted": "٤٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_01.mp3",
+          "recordingDate": "المجلس الأول",
+          "recordingLocation": "القاهرة",
+          "summary": "مقدمات البعثة ومولد النبي ﷺ في عام الفيل، رضاعته في بني سعد، وحفظ الله تعالى له في طفولته وشبابه وتطهيره من دنس الجاهلية.",
+          "keyTakeaways": [
+            "عناية الله واصطفاؤه لخاتم رسله منذ طفولته.",
+            "بركة النبي ﷺ التي حلت بدار حليمة السعدية.",
+            "حفظ الله لنبيه من عادات الجاهلية ورذائلها."
+          ],
+          "tags": [
+            "سيرة",
+            "المولد",
+            "النشأة"
+          ],
+          "chapters": [
+            {
+              "startSeconds": 0,
+              "title": "مقدمة في أهمية دراسة السيرة"
+            },
+            {
+              "startSeconds": 420,
+              "title": "أحداث عام الفيل وبشارات المولد"
+            },
+            {
+              "startSeconds": 1350,
+              "title": "الرضاعة في بادية بني سعد"
+            }
+          ],
+          "relatedVerses": [
+            "وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ"
+          ],
+          "relatedHadiths": [
+            "أنا دعوة أبي إبراهيم وبشارة عيسى"
+          ]
+        },
+        {
+          "id": "seerah_02",
+          "episodeNumber": 2,
+          "title": "المجلس الثاني: صفة النبي ﷺ وخُلقه الشريف",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_02.mp3",
+          "recordingDate": "المجلس الثاني",
+          "recordingLocation": "القاهرة",
+          "summary": "وصف شمائل النبي ﷺ الخَلقية والخُلقية، حياؤه، كرمه، شجاعته، وتبسمه في وجوه أصحابه وكيف ملك القلوب بكمال رحمته.",
+          "keyTakeaways": [
+            "كان خلقه القرآن يغضب لغضبه ويرضى لرضاه.",
+            "أجود الناس بالخير وكان أجود ما يكون في رمضان.",
+            "تواضعه ولين جانبه للصغير والكبير والضعيف."
+          ],
+          "tags": [
+            "سيرة",
+            "شمائل",
+            "أخلاق"
+          ],
+          "chapters": [
+            {
+              "startSeconds": 0,
+              "title": "جمال خلقته ووجهه المضيء"
+            },
+            {
+              "startSeconds": 800,
+              "title": "حياؤه وكرمه النبوي"
+            },
+            {
+              "startSeconds": 1800,
+              "title": "هيبته وشجاعته في اللقاء"
+            }
+          ],
+          "relatedVerses": [
+            "وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ"
+          ],
+          "relatedHadiths": [
+            "كان خلقه القرآن"
+          ]
+        },
+        {
+          "id": "seerah_03",
+          "episodeNumber": 3,
+          "title": "المجلس الثالث: نزول الوحي وبداية فجر النبوة بغار حراء",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2500,
+          "durationFormatted": "٤١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_03.mp3",
+          "recordingDate": "المجلس الثالث",
+          "recordingLocation": "القاهرة",
+          "summary": "تحنث النبي ﷺ في غار حراء، نزول الروح الأمين جبريل بـ اقرأ، وموقف أم المؤمنين خديجة رضي الله عنها في تثبيت فؤاده وتطمين روعه.",
+          "keyTakeaways": [
+            "عظمة نزول أول آيات القرآن وبدء الرسالة الخاتمة.",
+            "دور خديجة رضي الله عنها التاريخي في نصرة النبي ﷺ.",
+            "قاعدة كلا والله لا يخزيك الله أبداً في صنائع المعروف."
+          ],
+          "tags": [
+            "سيرة",
+            "الوحي",
+            "غار حراء"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_04",
+          "episodeNumber": 4,
+          "title": "المجلس الرابع: الدعوة السرية ودار الأرقم بن أبي الأرقم",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2300,
+          "durationFormatted": "٣٨ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_04.mp3",
+          "recordingDate": "المجلس الرابع",
+          "recordingLocation": "القاهرة",
+          "summary": "أوائل المسلمين السابقين إلى الإسلام، التأسيس الإيماني والتربوي في دار الأرقم، والحكمة النبوية في التدرج وحماية النواة الأولى.",
+          "keyTakeaways": [
+            "فضل الرعيل الأول من السابقين للإسلام.",
+            "أهمية المحضن التربوي في بناء الرجال والعقيدة.",
+            "الأخذ بالحكمة والحذر الشرعي في بدايات الدعوة."
+          ],
+          "tags": [
+            "سيرة",
+            "دار الأرقم",
+            "تربية"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_05",
+          "episodeNumber": 5,
+          "title": "المجلس الخامس: الجهر بالدعوة على الصفا وثبات المستضعفين",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_05.mp3",
+          "recordingDate": "المجلس الخامس",
+          "recordingLocation": "القاهرة",
+          "summary": "نداء النبي ﷺ لقريش على جبل الصفا، بداية المواجهة مع كبراء قريش، وصور الصبر واليقين عند آل ياسر وبلال بن رباح رضي الله عنهم.",
+          "keyTakeaways": [
+            "الصدع بالحق ومواجهة الباطل بصلابة الإيمان.",
+            "صبر المستضعفين وثباتهم تحت وطأة التعذيب والتنكيل.",
+            "أحدٌ أحد: عقيدة التوحيد الصافية التي لا تقهرها السياط."
+          ],
+          "tags": [
+            "سيرة",
+            "ثبات",
+            "توحيد"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "فَاصْدَعْ بِمَا تُؤْمَرُ وَأَعْرِضْ عَنِ الْمُشْرِكِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_06",
+          "episodeNumber": 6,
+          "title": "المجلس السادس: الهجرة إلى الحبشة وعدل النجاشي",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2400,
+          "durationFormatted": "٤٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_06.mp3",
+          "recordingDate": "المجلس السادس",
+          "recordingLocation": "القاهرة",
+          "summary": "بحث النبي ﷺ عن مأمن للمسلمين المستضعفين، خطاب جعفر بن أبي طالب العظيم بين يدي النجاشي وبيان محاسن دين الإسلام وتنزيه عيسى عليه السلام.",
+          "keyTakeaways": [
+            "بحث القيادة عن أمان الرعية وأهمية الهجرة لحفظ الدين.",
+            "فصاحة جعفر وحكمته في عرض رسالة الإسلام.",
+            "قيمة العدل في استقرار الممالك ورعاية الحقوق."
+          ],
+          "tags": [
+            "سيرة",
+            "الحبشة",
+            "جعفر"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_07",
+          "episodeNumber": 7,
+          "title": "المجلس السابع: حصار الشِّعب وعام الحزن ورحلة الطائف",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 3100,
+          "durationFormatted": "٥١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_07.mp3",
+          "recordingDate": "المجلس السابع",
+          "recordingLocation": "القاهرة",
+          "summary": "الحصار الاقتصادي والاجتماعي الظالم في شعب أبي طالب، وفاة خديجة وأبي طالب، خروج النبي ﷺ إلى الطائف ورجمه بالحجارة ودعائه العظيم.",
+          "keyTakeaways": [
+            "الصبر على الجوع والحصار في سبيل إعلاء كلمة الله.",
+            "دعاء الطائف: إن لم يكن بك علي غضب فلا أبالي.",
+            "رحمة النبي ﷺ بأهل الطائف ورفضه إهلاكهم."
+          ],
+          "tags": [
+            "سيرة",
+            "الطائف",
+            "ابتلاء"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_08",
+          "episodeNumber": 8,
+          "title": "المجلس الثامن: الإسراء والمعراج وفرض الصلوات الخمس",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2900,
+          "durationFormatted": "٤٨ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_08.mp3",
+          "recordingDate": "المجلس الثامن",
+          "recordingLocation": "القاهرة",
+          "summary": "معجزة الإسراء من المسجد الحرام إلى المسجد الأقصى والعروج إلى سدرة المنتهى، التكريم الإلهي لرسول الله ﷺ، وفرض الصلوات الخمس مباشرة في السماء.",
+          "keyTakeaways": [
+            "مكانة المسجد الأقصى والرباط العقدي مع المسجد الحرام.",
+            "مكانة الصلاة العظيمة التي فُرضت فوق سبع سماوات.",
+            "موقف الصديق أبي بكر وتصديقه الحاسم دون تردد."
+          ],
+          "tags": [
+            "سيرة",
+            "الإسراء والمعراج",
+            "الصلاة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_09",
+          "episodeNumber": 9,
+          "title": "المجلس التاسع: بيعتا العقبة ومقدمات النصر والتمكين",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2600,
+          "durationFormatted": "٤٣ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_09.mp3",
+          "recordingDate": "المجلس التاسع",
+          "recordingLocation": "القاهرة",
+          "summary": "عرض النبي ﷺ نفسه على القبائل في مواسم الحج، لقاء وفد يثرب وإسلامهم، بيعة العقبة الأولى والثانية وفتح أبواب دار الهجرة والنصرة.",
+          "keyTakeaways": [
+            "موقف الأنصار الخالد في نصرة دين الله وإيواء رسوله.",
+            "الوفاء بالعهود والتضحية بالأنفس والأموال لحفظ الدين.",
+            "حكمة النبي ﷺ وسرية التخطيط والتنظيم المحكم."
+          ],
+          "tags": [
+            "سيرة",
+            "العقبة",
+            "الأنصار"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_10",
+          "episodeNumber": 10,
+          "title": "الهجرة النبوية المباركة: التوكل والأخذ بالأسباب",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_10.mp3",
+          "recordingDate": "المجلس العاشر",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي لوقائع الهجرة النبوية المباركة من مكة إلى المدينة، دروس التوكل والأخذ بالأسباب، ومعية الله عز وجل لنبيه وصاحبه في الغار.",
+          "keyTakeaways": [
+            "الأخذ بالأسباب المادية لا ينافي كمال التوكل على الله تعالى.",
+            "فضل الصديق أبي بكر رضي الله عنه وصدق صحبته في أحلك الظروف.",
+            "بناء المجتمع المسلم على الإخاء والتكافل فور الوصول إلى قباء والمدينة."
+          ],
+          "tags": [
+            "سيرة",
+            "عقيدة",
+            "توكل",
+            "هجرة"
+          ],
+          "chapters": [
+            {
+              "startSeconds": 0,
+              "title": "التخطيط النبوي المحكم للهجرة"
+            },
+            {
+              "startSeconds": 750,
+              "title": "في الغار: ما ظنك باثنين الله ثالثهما"
+            },
+            {
+              "startSeconds": 1900,
+              "title": "الوصول إلى قباء والمدينة المنورة"
+            }
+          ],
+          "relatedVerses": [
+            "إِلَّا تَنصُرُوهُ فَقَدْ نَصَرَهُ اللَّهُ إِذْ أَخْرَجَهُ الَّذِينَ كَفَرُوا ثَانِيَ اثْنَيْنِ"
+          ],
+          "relatedHadiths": [
+            "يا أبا بكر ما ظنك باثنين الله ثالثهما"
+          ]
+        },
+        {
+          "id": "seerah_11",
+          "episodeNumber": 11,
+          "title": "المجلس الحادي عشر: بناء المسجد والمؤاخاة بين المهاجرين والأنصار",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 2500,
+          "durationFormatted": "٤١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_11.mp3",
+          "recordingDate": "المجلس الحادي عشر",
+          "recordingLocation": "القاهرة",
+          "summary": "تأسيس الدولة الإسلامية في المدينة النبوية، بناء المسجد النبوي مركزاً للعبادة والقيادة، وأعظم عقد مؤاخاة وإيثار في تاريخ البشرية.",
+          "keyTakeaways": [
+            "المسجد هو قلب المجتمع المسلم ومركز انطلاقه.",
+            "الإيثار والأخوة الإيمانية التي محت عصبية الجاهلية.",
+            "إرساء وثيقة المدينة وضمان حقوق العدالة والتعايش."
+          ],
+          "tags": [
+            "سيرة",
+            "المؤاخاة",
+            "المدينة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالَّذِينَ تَبَوَّءُوا الدَّارَ وَالْإِيمَانَ مِن قَبْلِهِمْ يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_12",
+          "episodeNumber": 12,
+          "title": "المجلس الثاني عشر: صلح الحديبية والفتح المبين",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_12.mp3",
+          "recordingDate": "المجلس الثاني عشر",
+          "recordingLocation": "القاهرة",
+          "summary": "خروج الصحابة معتمرين، بيعة الرضوان تحت الشجرة، بنود صلح الحديبية ورؤية النبي ﷺ السياسية البعيدة وكيف سماه الله فتحاً مبيناً.",
+          "keyTakeaways": [
+            "بيعة الرضوان ورضوان الله على أهل الشجرة.",
+            "الاستسلام لأمر الله ورسوله حتى لو خفيت الحكمة آنياً.",
+            "أثر الصلح والأمن في انتشار الإسلام ودخول أفواج العرب."
+          ],
+          "tags": [
+            "سيرة",
+            "الحديبية",
+            "فتح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "seerah_13",
+          "episodeNumber": 13,
+          "title": "المجلس الثالث عشر: حجة الوداع ووصايا رسول الله ﷺ الأخيرة",
+          "seriesId": "series_seerah",
+          "seriesTitle": "سلسلة سيرة النبي ﷺ",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة النبوية",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/seerah_13.mp3",
+          "recordingDate": "المجلس الثالث عشر",
+          "recordingLocation": "القاهرة",
+          "summary": "خطبة الوداع التاريخية في عرفات، إعلان حرمة الدماء والأموال والأعراض، حقوق النساء، ووفاة النبي ﷺ ووداعه للأمة بعد بلاغ الرسالة.",
+          "keyTakeaways": [
+            "أعظم وثيقة لحقوق الإنسان وحرمة الدماء والأعراض.",
+            "الوصية بكتاب الله وسنة نبيه وسد أبواب الجاهلية والربا.",
+            "ثبات الصديق يوم وفاة النبي ﷺ: من كان يعبد محمداً فإن محمداً قد مات."
+          ],
+          "tags": [
+            "سيرة",
+            "حجة الوداع",
+            "الوفاة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي"
+          ],
+          "relatedHadiths": [
+            "تركت فيكم ما إن تمسكتم به لن تضلوا بعدي أبداً"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series_battles",
+      "title": "سلسلة المعارك الكبرى",
+      "topicId": "seerah_maghazi",
+      "bookId": null,
+      "description": "ملاحم البطولة والفتوحات الإسلامية العظمى التي غيرت مجرى التاريخ ورسخت راية التوحيد.",
+      "totalEpisodes": 9,
+      "isCompleted": true,
+      "coverEmoji": "⚔️",
+      "recordingPeriod": "2012 - 2014",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "battles_01",
+          "episodeNumber": 1,
+          "title": "غزوة بدر الكبرى: يوم الفرقان ومعالم النصر الخالد",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 3200,
+          "durationFormatted": "٥٣ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_01.mp3",
+          "recordingDate": "المجلس الأول",
+          "recordingLocation": "القاهرة",
+          "summary": "التحليل الإيماني والاستراتيجي لغزوة بدر الكبرى، أسباب تنزل النصر والملائكة، استغاثة النبي ﷺ، وأثر صدق القلوب في ميزان المعركة.",
+          "keyTakeaways": [
+            "النصر من عند الله وحده وما النصر إلا من عند الله العزيز الحكيم.",
+            "أهمية الشورى وتلاحم القائد مع صحابته في الميدان.",
+            "دعاء الاستغاثة والتضرع في أحلك أوقات الشدائد."
+          ],
+          "tags": [
+            "معارك",
+            "بدر",
+            "نصر"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنتُمْ أَذِلَّةٌ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "battles_02",
+          "episodeNumber": 2,
+          "title": "غزوة أحد: دروس الانضباط وعاقبة المعصية والتمحيص",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_02.mp3",
+          "recordingDate": "المجلس الثاني",
+          "recordingLocation": "القاهرة",
+          "summary": "تحليل وقائع غزوة أحد، خطورة مخالفة أمر القائد من الرماة، فضل الشهداء وموقف النبي ﷺ في الثبات وتضميد جراح الصحابة.",
+          "keyTakeaways": [
+            "خطورة الركون إلى الدنيا وترك أوامر القيادة الشرعية.",
+            "الابتلاء سنة ماضية في تمحيص الصف المؤمن وتنقيته.",
+            "شجاعة الصحابة المستميتة في الذود عن رسول الله ﷺ."
+          ],
+          "tags": [
+            "معارك",
+            "أحد",
+            "تمحيص"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَلِيُمَحِّصَ اللَّهُ الَّذِينَ آمَنُوا وَيَمْحَقَ الْكَافِرِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "battles_03",
+          "episodeNumber": 3,
+          "title": "غزوة الخندق (الأحزاب): ثبات المؤمنين عند الزلزال",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 3100,
+          "durationFormatted": "٥١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_03.mp3",
+          "recordingDate": "المجلس الثالث",
+          "recordingLocation": "القاهرة",
+          "summary": "حصار الأحزاب للمدينة وابتلاء المؤمنين وزلزال القلوب، حفر الخندق وبشارات النبوة بكسرى وقيصر، وصرف الله كيد الأحزاب بالريح وجنود الغيب.",
+          "keyTakeaways": [
+            "صدق الإيمان يتجلى في أوقات الشدائد والحصار الخانق.",
+            "فضح المنافقين ومواقفهم المتخاذلة عند الأزمات.",
+            "كفاية الله لعباده الصابرين: وكفى الله المؤمنين القتال."
+          ],
+          "tags": [
+            "معارك",
+            "الأحزاب",
+            "الخندق"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِذْ جَاءُوكُم مِّن فَوْقِكُمْ وَمِنْ أَسْفَلَ مِنكُمْ وَإِذْ زَاغَتِ الْأَبْصَارُ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "battles_04",
+          "episodeNumber": 4,
+          "title": "غزوة الأعاجيب (ذات الرقاع): الفقه في قلب الخوف",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_04.mp3",
+          "recordingDate": "المجلس الرابع",
+          "recordingLocation": "القاهرة",
+          "summary": "خروج النبي ﷺ وأصحابه يربطون الخرق على أقدامهم الدامية، تشريع صلاة الخوف، قصة غورث بن الحارث وسيف النبي ﷺ ومعنى التوكل المطلق.",
+          "keyTakeaways": [
+            "الصبر على شظف العيش والمشقة في سبيل الدعوة.",
+            "عظمة فريضة الصلاة وأداؤها حتى في أشد مواقف الخوف والقتال.",
+            "شجاعة النبي ﷺ وهيبته في قلوب أعدائه."
+          ],
+          "tags": [
+            "معارك",
+            "ذات الرقاع",
+            "صلاة الخوف"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَإِذَا كُنتَ فِيهِمْ فَأَقَمْتَ لَهُمُ الصَّلَاةَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "battles_05",
+          "episodeNumber": 5,
+          "title": "غزوة مؤتة: عبقرية خالد بن الوليد وبطولة القادة الثلاثة",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 3400,
+          "durationFormatted": "٥٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_05.mp3",
+          "recordingDate": "المجلس الخامس",
+          "recordingLocation": "القاهرة",
+          "summary": "مواجهة ٣ آلاف من المسلمين لـ ٢٠٠ ألف من الروم وحلفائهم، استشهاد زيد وجعفر وابن رواحة، واستلام خالد للراية والانسحاب التكتيكي العبقري.",
+          "keyTakeaways": [
+            "البطولة الفذة والاستبسال في الذود عن راية التوحيد.",
+            "حفظ دماء الجيش والانسحاب الحكيم نصر تكتيكي لا هزيمة.",
+            "تسمية النبي ﷺ لخالد بن الوليد بـ سيف الله المسلول."
+          ],
+          "tags": [
+            "معارك",
+            "مؤتة",
+            "خالد بن الوليد"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": [
+            "أخذ الراية زيد فأصيب ثم أخذ جعفر فأصيب"
+          ]
+        },
+        {
+          "id": "battles_06",
+          "episodeNumber": 6,
+          "title": "معركة اليرموك: تحطيم الإمبراطورية البيزنطية وفتح الشام",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_06.mp3",
+          "recordingDate": "المجلس السادس",
+          "recordingLocation": "القاهرة",
+          "summary": "الملحمة الكبرى على نهر اليرموك، خطة خالد بن الوليد الحربية، بطولات عكرمة وكتيبة الموت، وانهيار الجيش الرومي وفتح بلاد الشام المباركة.",
+          "keyTakeaways": [
+            "العقيدة الراسخة تهزم التفوق العددي والتسليحي الضخم.",
+            "بطولة عكرمة بن أبي جهل وإيثار الشهداء عند النزع الأخير.",
+            "انكسار شوكة الروم وخروجهم النهائي من أرض الشام."
+          ],
+          "tags": [
+            "معارك",
+            "اليرموك",
+            "فتوحات"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "battles_07",
+          "episodeNumber": 7,
+          "title": "معركة القادسية: زوال دولة كسرى وفتح بلاد العراق",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 3500,
+          "durationFormatted": "٥٨ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_07.mp3",
+          "recordingDate": "المجلس السابع",
+          "recordingLocation": "القاهرة",
+          "summary": "قيادة سعد بن أبي وقاص رضي الله عنه، رسائل ربعي بن عامر لكسرى، أيام القادسية (أرماث، أغواث، عمواس)، مقتل رستم وسقوط المدائن.",
+          "keyTakeaways": [
+            "كلمات ربعي الخالدة: الله ابتعثنا لنخرج من شاء من عبادة العباد إلى عبادة الله.",
+            "الصبر في أيام القتال الملحمية ومواجهة فيلة الفرس.",
+            "تحقيق نبوءة النبي ﷺ بفتح إيوان كسرى وسواره."
+          ],
+          "tags": [
+            "معارك",
+            "القادسية",
+            "سعد بن أبي وقاص"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "battles_08",
+          "episodeNumber": 8,
+          "title": "معركة نهاوند (فتح الفتوح): نهاية الإمبراطورية الساسانية",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_08.mp3",
+          "recordingDate": "المجلس الثامن",
+          "recordingLocation": "القاهرة",
+          "summary": "تجمع مئات الآلاف من الفرس في نهاوند، قيادة النعمان بن مقرن المزني واستشهاده، واستكمال النصر الحاسم الذي أنهى دولة الفرس إلى الأبد.",
+          "keyTakeaways": [
+            "تسمية المعركة بـ فتح الفتوح لعدم قيام قائمة للفرس بعدها.",
+            "إخلاص القادة واحتساب الاستشهاد في سبيل الله.",
+            "انتشار نور الإسلام في بلاد فارس وخراسان."
+          ],
+          "tags": [
+            "معارك",
+            "نهاوند",
+            "فتح الفتوح"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "battles_09",
+          "episodeNumber": 9,
+          "title": "فتح عمورية: ملحمة العزة ونصرة المستضعفين",
+          "seriesId": "series_battles",
+          "seriesTitle": "سلسلة المعارك الكبرى",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "المعارك الكبرى",
+          "durationSeconds": 2900,
+          "durationFormatted": "٤٨ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/battles_09.mp3",
+          "recordingDate": "المجلس التاسع",
+          "recordingLocation": "القاهرة",
+          "summary": "استجابة الخليفة المعتصم لنداء المرأة المسلمة وامعتصماه، قيادة الجيش الجرار لدك حصون عمورية المنيعة وتكذيب المنجمين ونصرة المسلمين.",
+          "keyTakeaways": [
+            "قيمة العزة والكرامة وسرعة نجدة المظلوم والمستضعف.",
+            "قصيدة أبي تمام: السيف أصدق أنباءً من الكتب.",
+            "هيبة الأمة الإسلامية عندما تتحرك قادتها بدافع الإيمان والغيرة."
+          ],
+          "tags": [
+            "معارك",
+            "عمورية",
+            "عزة"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        }
+      ]
+    },
+    {
+      "id": "series_wabil",
+      "title": "سلسلة شرح الوابل الصيب",
+      "topicId": "tazkiyah_khawatir",
+      "bookId": "book_wabil",
+      "description": "شرح روائع كتاب الوابل الصيب للإمام ابن القيم، وبيان أسرار الذكر والشكر وأدوية القلوب.",
+      "totalEpisodes": 5,
+      "isCompleted": true,
+      "coverEmoji": "💧",
+      "recordingPeriod": "2013",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "wabil_01",
+          "episodeNumber": 1,
+          "title": "المجلس الأول: عنوان سعادة العبد (الشكر والصبر والاستغفار)",
+          "seriesId": "series_wabil",
+          "seriesTitle": "سلسلة شرح الوابل الصيب",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2400,
+          "durationFormatted": "٤٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/wabil_01.mp3",
+          "recordingDate": "المجلس الأول",
+          "recordingLocation": "القاهرة",
+          "summary": "افتتاحية كتاب الإمام ابن القيم رحمه الله، وبيان أصول السعادة الثلاثة: إذا أُعطي شكر، وإذا ابتُلي صبر، وإذا أذنب استغفر.",
+          "keyTakeaways": [
+            "الشكر قيد النعم وموجب المزيد.",
+            "الصبر على البلاء وحبس النفس عن التسخط والجزع.",
+            "الاستغفار الصادق يمحو أثر الذنوب ويجدد الإيمان."
+          ],
+          "tags": [
+            "الوابل الصيب",
+            "تزكية",
+            "شكر",
+            "صبر"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ"
+          ],
+          "relatedHadiths": [
+            "عجباً لأمر المؤمن إن أمره كله له خير"
+          ]
+        },
+        {
+          "id": "wabil_02",
+          "episodeNumber": 2,
+          "title": "المجلس الثاني: حياة القلب بالذكر ومقارنته بالسمك في الماء",
+          "seriesId": "series_wabil",
+          "seriesTitle": "سلسلة شرح الوابل الصيب",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2600,
+          "durationFormatted": "٤٣ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/wabil_02.mp3",
+          "recordingDate": "المجلس الثاني",
+          "recordingLocation": "القاهرة",
+          "summary": "قول ابن تيمية وابن القيم: الذكر للقلب مثل الماء للسمك، فكيف يكون حال السمك إذا فارق الماء؟ وبيان حقيقة موت القلب بالغفلة.",
+          "keyTakeaways": [
+            "الذكر غذاء الروح وقوت القلوب وحياتها الحقيقية.",
+            "الغفلة سبب قسوة القلب ووحشته وتسلط الشياطين.",
+            "أثر الذكر في تنوير الوجه وراحة البال والسكينة."
+          ],
+          "tags": [
+            "الوابل الصيب",
+            "ذكر",
+            "رقائق"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ"
+          ],
+          "relatedHadiths": [
+            "مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت"
+          ]
+        },
+        {
+          "id": "wabil_03",
+          "episodeNumber": 3,
+          "title": "المجلس الثالث: فوائد الذكر المائة (طرد الشيطان وجلب الرزق)",
+          "seriesId": "series_wabil",
+          "seriesTitle": "سلسلة شرح الوابل الصيب",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/wabil_03.mp3",
+          "recordingDate": "المجلس الثالث",
+          "recordingLocation": "القاهرة",
+          "summary": "استعراض أكثر من مائة فائدة لذكر الله تعالى، كيف يطرد الشيطان ويقمعه، يزيل الهم والغم، يكسو الذاكر المهابة والحلاوة، ويجلب الرزق.",
+          "keyTakeaways": [
+            "الذكر حصن حصين لا يقتحمه الشيطان الرجيم.",
+            "الذاكر في معية الله الخاصة: أنا مع عبدي إذا ذكرني.",
+            "الذكر أيسر العبادات وأعظمها أجراً ومثوبة عند الله."
+          ],
+          "tags": [
+            "الوابل الصيب",
+            "أذكار",
+            "بركة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "wabil_04",
+          "episodeNumber": 4,
+          "title": "المجلس الرابع: إحياء القلوب بذكر علام الغيوب وتواطؤ اللسان والقلب",
+          "seriesId": "series_wabil",
+          "seriesTitle": "سلسلة شرح الوابل الصيب",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2500,
+          "durationFormatted": "٤١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/wabil_04.mp3",
+          "recordingDate": "المجلس الرابع",
+          "recordingLocation": "القاهرة",
+          "summary": "مراتب الذكر الثلاث (باللسان، بالقلب، بالجوارح)، وكيف يرتقي العبد من مجرد حركة اللسان إلى استحضار عظمة المذكور سبحانه في كل لحظة.",
+          "keyTakeaways": [
+            "أفضل الذكر ما تواطأ عليه القلب واللسان واستشعر معانيه.",
+            "الذكر الدائم يورث منزلة المراقبة والإحسان.",
+            "فضل التسبيح والتحميد والتهليل في غرس أشجار الجنة."
+          ],
+          "tags": [
+            "الوابل الصيب",
+            "تزكية",
+            "مراقبة"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "wabil_05",
+          "episodeNumber": 5,
+          "title": "المجلس الخامس: أذكار الصباح والمساء ودروع الحفظ الإلهي",
+          "seriesId": "series_wabil",
+          "seriesTitle": "سلسلة شرح الوابل الصيب",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/wabil_05.mp3",
+          "recordingDate": "المجلس الخامس",
+          "recordingLocation": "القاهرة",
+          "summary": "فقه أذكار طرفي النهار، المعاني العميقة لسيد الاستغفار، آية الكرسي، المعوذات، وحصانة المسلم من العين والحسد والوساوس.",
+          "keyTakeaways": [
+            "أذكار الصباح والمساء بمثابة الدرع الواقي الذي لا ينفذ منه مكروه.",
+            "شرح أسرار سيد الاستغفار والإقرار بنعم الله والاعتراف بالذنب.",
+            "بركة البداءة والختام بذكر الله في حفظ اليوم والليلة."
+          ],
+          "tags": [
+            "الوابل الصيب",
+            "أذكار الصباح",
+            "تحصين"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَسَبِّحْ بِحَمْدِ رَبِّكَ قَبْلَ طُلُوعِ الشَّمْسِ وَقَبْلَ غُرُوبِهَا"
+          ],
+          "relatedHadiths": [
+            "سيد الاستغفار أن تقول اللهم أنت ربي لا إله إلا أنت"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series_bala",
+      "title": "سلسلة عقائد البلاء وفقه الابتلاء",
+      "topicId": "aqeedah_tawheed",
+      "bookId": null,
+      "description": "دروس عقدية وتربوية راسخة في معاني الصبر والرضا وحسن الظن بالله عند نزول المكاره والشدائد.",
+      "totalEpisodes": 4,
+      "isCompleted": true,
+      "coverEmoji": "🛡️",
+      "recordingPeriod": "2014",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "bala_01",
+          "episodeNumber": 1,
+          "title": "المجلس الأول: إن مع العسر يسراً ولن يغلب عسر يسرين",
+          "seriesId": "series_bala",
+          "seriesTitle": "سلسلة عقائد البلاء وفقه الابتلاء",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة وفقه الابتلاء",
+          "durationSeconds": 2600,
+          "durationFormatted": "٤٣ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/bala_01.mp3",
+          "recordingDate": "المجلس الأول",
+          "recordingLocation": "القاهرة",
+          "summary": "القاعدة القرآنية المحكمة في اقتران الفرج بالشدة، ومعنى تنكير يسراً وتعريف العسر، وبشارات الله للمؤمنين في بطون المحن.",
+          "keyTakeaways": [
+            "كل شدة محفوفة بيسرين سابق ولاحق.",
+            "الشدائد تصفي الإيمان وتكشف حقيقة التوكل واليقين.",
+            "حسن الظن بالله وانتظار الفرج عبادة قلبية جليلة."
+          ],
+          "tags": [
+            "عقائد البلاء",
+            "صبر",
+            "يقين",
+            "فرج"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا * إِنَّ مَعَ الْعُسْرِ يُسْرًا"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "bala_02",
+          "episodeNumber": 2,
+          "title": "المجلس الثاني: وهو الغفور الودود (الرحمة الخفية في أقدار الله)",
+          "seriesId": "series_bala",
+          "seriesTitle": "سلسلة عقائد البلاء وفقه الابتلاء",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة وفقه الابتلاء",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/bala_02.mp3",
+          "recordingDate": "المجلس الثاني",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات في اسم الله الودود واقترانه بـ الغفور في سورة البروج، كيف يتودد الرب إلى عباده بالمصائب ليردهم إليه رداً جميلاً.",
+          "keyTakeaways": [
+            "أقدار الله كلها جارية بين العدل والفضل والرحمة.",
+            "البلاء ليس دليلاً على الهوان بل قد يكون علامة على الاصطفاء والمحبة.",
+            "الله أرحم بعبده من الوالدة بولدها ولو في أشد أوقات الألم."
+          ],
+          "tags": [
+            "عقائد البلاء",
+            "الودود",
+            "أسماء الله",
+            "رحمة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَهُوَ الْغَفُورُ الْوَدُودُ * ذُو الْعَرْشِ الْمَجِيدُ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "bala_03",
+          "episodeNumber": 3,
+          "title": "المجلس الثالث: فقه الابتلاء وحسن الظن بالله عند نزول المكاره",
+          "seriesId": "series_bala",
+          "seriesTitle": "سلسلة عقائد البلاء وفقه الابتلاء",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة وفقه الابتلاء",
+          "durationSeconds": 2500,
+          "durationFormatted": "٤١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/bala_03.mp3",
+          "recordingDate": "المجلس الثالث",
+          "recordingLocation": "القاهرة",
+          "summary": "كيف ينظر المؤمن إلى المصائب بمنظار الإيمان، الفارق بين جزع المنافق وتسليم المؤمن، وأن وراء كل محنة منحة ووراء كل ضيق مخرجاً.",
+          "keyTakeaways": [
+            "الرضا بالقضاء يورث برد اليقين وسكينة النفس وطمأنينة القلب.",
+            "أشد الناس بلاءً الأنبياء ثم الأمثل فالأمثل.",
+            "تكفير السيئات ورفع الدرجات بالصبر الجميل عند الصدمة الأولى."
+          ],
+          "tags": [
+            "عقائد البلاء",
+            "ابتلاء",
+            "رضا"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَلَنَبْلُوَنَّكُم بِشَيْءٍ مِّنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِّنَ الْأَمْوَالِ وَالْأَنفُسِ وَالثَّمَرَاتِ وَبَشِّرِ الصَّابِرِينَ"
+          ],
+          "relatedHadiths": [
+            "أشد الناس بلاء الأنبياء ثم الذين يلونهم"
+          ]
+        },
+        {
+          "id": "bala_04",
+          "episodeNumber": 4,
+          "title": "المجلس الرابع: الموت الرحيب واستعداد المؤمن للقاء ربه",
+          "seriesId": "series_bala",
+          "seriesTitle": "سلسلة عقائد البلاء وفقه الابتلاء",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة وفقه الابتلاء",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/bala_04.mp3",
+          "recordingDate": "المجلس الرابع",
+          "recordingLocation": "القاهرة",
+          "summary": "حقيقة الموت في المنظور الإسلامي كجسر انتقال إلى دار الكرامة والنعيم، كسر الخوف من الموت بالعمل الصالح وحسن الظن بالقدوم على أرحم الراحمين.",
+          "keyTakeaways": [
+            "الموت راحة للمؤمن من نصب الدنيا ودار الفتن إلى جوار ربه.",
+            "من أحب لقاء الله أحب الله لقاءه.",
+            "عمارة القلوب بالاستعداد الدائم والعمل الصالح قبل فوات الأوان."
+          ],
+          "tags": [
+            "عقائد البلاء",
+            "الموت",
+            "الآخرة",
+            "رجاء"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "قُلْ إِنَّ الْمَوْتَ الَّذِي تَفِرُّونَ مِنْهُ فَإِنَّهُ مُلَاقِيكُمْ"
+          ],
+          "relatedHadiths": [
+            "من أحب لقاء الله أحب الله لقاءه"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series_tariq",
+      "title": "سلسلة صياغة الطريق",
+      "topicId": "tazkiyah_khawatir",
+      "bookId": "book_fawaid",
+      "description": "شرح معالم كتاب الفوائد لابن القيم، ورسم معالم السير الصادق والتجرد لله تعالى.",
+      "totalEpisodes": 3,
+      "isCompleted": true,
+      "coverEmoji": "🧭",
+      "recordingPeriod": "2013",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "tariq_01",
+          "episodeNumber": 1,
+          "title": "المجلس الأول: صياغة الطريق إلى الله وقواعد السير الصحيح",
+          "seriesId": "series_tariq",
+          "seriesTitle": "سلسلة صياغة الطريق",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2500,
+          "durationFormatted": "٤١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tariq_01.mp3",
+          "recordingDate": "المجلس الأول",
+          "recordingLocation": "القاهرة",
+          "summary": "رسم خريطة طريق واضحة للمسلم في زمن كثرة الشبهات والشهوات، التمسك بالسنة والقرآن، وضبط بوصلة القلب نحو رضا الله عز وجل.",
+          "keyTakeaways": [
+            "العلم الشرعي النافع هو النور الكاشف لظلمات الفتن والبدع.",
+            "الصحبة الصالحة سياج الأمان في طريق الاستقامة والثبات.",
+            "دوام محاسبة النفس ومراجعة النوايا قبل العمل ومعه وبعده."
+          ],
+          "tags": [
+            "صياغة الطريق",
+            "الفوائد",
+            "منهج",
+            "استقامة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَأَنَّ هَٰذَا صِرَاطِي مُسْتَقِيمًا فَاتَّبِعُوهُ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "tariq_02",
+          "episodeNumber": 2,
+          "title": "المجلس الثاني: أصول الخطايا الثلاث (الكبر والحسد والحرص)",
+          "seriesId": "series_tariq",
+          "seriesTitle": "سلسلة صياغة الطريق",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tariq_02.mp3",
+          "recordingDate": "المجلس الثاني",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح فائدة ابن القيم الجليلة: أصول الخطايا كلها ثلاثة: الكبر وهو الذي أخرج إبليس، والحرص وهو الذي أخرج آدم، والحسد وهو الذي حمل قابيل على قتل أخيه.",
+          "keyTakeaways": [
+            "الكبر يحجب العبد عن قبول الحق والانقياد لأمر الله.",
+            "الحرص على الفضول يوقع في الشبهات والمحرمات.",
+            "الحسد يأكل الحسنات ويشعل نار العداوة والبغضاء بين الإخوة."
+          ],
+          "tags": [
+            "صياغة الطريق",
+            "الفوائد",
+            "أمراض القلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": [
+            "لا يدخل الجنة من كان في قلبه مثقال ذرة من كبر"
+          ]
+        },
+        {
+          "id": "tariq_03",
+          "episodeNumber": 3,
+          "title": "المجلس الثالث: هجرة القلوب والتجرد من التعلق بغير الله",
+          "seriesId": "series_tariq",
+          "seriesTitle": "سلسلة صياغة الطريق",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتزكية",
+          "durationSeconds": 2600,
+          "durationFormatted": "٤٣ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tariq_03.mp3",
+          "recordingDate": "المجلس الثالث",
+          "recordingLocation": "القاهرة",
+          "summary": "الهجرة القلبية إلى الله ورسوله، كيف يتخلص السالك من أسر الشهوات والعادات والتعلق بالمخلوقين ليكون قلبه خالصاً للواحد القهار.",
+          "keyTakeaways": [
+            "من تعلق بشيء عُذِّب به ووُكِل إليه.",
+            "حلاوة الإيمان لا تُنال إلا بتقديم محبة الله ورسوله على كل ما سواهما.",
+            "التخلية قبل التحلية: تنظيف القلب من الأصنام الخفية."
+          ],
+          "tags": [
+            "صياغة الطريق",
+            "الفوائد",
+            "هجرة القلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "فَفِرُّوا إِلَى اللَّهِ إِنِّي لَكُم مِّنْهُ نَذِيرٌ مُّبِينٌ"
+          ],
+          "relatedHadiths": [
+            "والمهاجر من هجر ما نهى الله عنه"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series_tafseer",
+      "title": "سلسلة التفسير والتدبر",
+      "topicId": "tafseer_tadabbur",
+      "bookId": null,
+      "description": "وقفات تدبرية عميقة في قصص وسور القرآن الكريم واستخراج العبر الإيمانية والتربوية.",
+      "totalEpisodes": 4,
+      "isCompleted": true,
+      "coverEmoji": "📖",
+      "recordingPeriod": "2012 - 2015",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "tafseer_01",
+          "episodeNumber": 1,
+          "title": "سورة الكهف: فتن الدنيا الأربع وعواصم النجاة الربانية",
+          "seriesId": "series_tafseer",
+          "seriesTitle": "سلسلة التفسير والتدبر",
+          "topicId": "tafseer_tadabbur",
+          "topicDisplayName": "التفسير والتدبر",
+          "durationSeconds": 2900,
+          "durationFormatted": "٤٨ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tafseer_01.mp3",
+          "recordingDate": "المجلس الأول",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات عقدية وتربوية في الفتن الأربع المذكورة في سورة الكهف (الدين، المال، العلم، السلطة) وكيف جعل الله القرآن عاصمة للمؤمنين.",
+          "keyTakeaways": [
+            "فتنة الدين وموقف فتية الكهف في الثبات والاعتزال لحفظ الإيمان.",
+            "فتنة المال وصاحب الجنتين وعاقبة الغرور بالجحود ونكران النعمة.",
+            "التواضع في طلب العلم من قصة موسى والخضر عليهما السلام."
+          ],
+          "tags": [
+            "تفسير",
+            "الكهف",
+            "تدبر",
+            "فتن"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِنَّهُمْ فِتْيَةٌ آمَنُوا بِرَبِّهِمْ وَزِدْنَاهُمْ هُدًى"
+          ],
+          "relatedHadiths": [
+            "من قرأ سورة الكهف يوم الجمعة أضاء له من النور ما بين الجمعتين"
+          ]
+        },
+        {
+          "id": "tafseer_02",
+          "episodeNumber": 2,
+          "title": "سورة مريم: معالم الرجاء وأدب الدعاء الخفي",
+          "seriesId": "series_tafseer",
+          "seriesTitle": "سلسلة التفسير والتدبر",
+          "topicId": "tafseer_tadabbur",
+          "topicDisplayName": "التفسير والتدبر",
+          "durationSeconds": 2600,
+          "durationFormatted": "٤٣ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tafseer_02.mp3",
+          "recordingDate": "المجلس الثاني",
+          "recordingLocation": "القاهرة",
+          "summary": "تدبر أسلوب القرآن البديع في سورة مريم، وذكر رحمة الله بعباده زكريا ويحيى ومريم وعيسى عليهم السلام، وتنزيه الله عن الولد والشريك.",
+          "keyTakeaways": [
+            "نداء الخفاء: إذ نادى ربه نداءً خفياً وفضل الإخلاص في الدعاء.",
+            "قدرة الله المطلقة التي تتجاوز سنن المادة والأسباب الظاهرة.",
+            "عظمة بر الوالدين والصلة في سير الأنبياء الكرام."
+          ],
+          "tags": [
+            "تفسير",
+            "مريم",
+            "دعاء"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِذْ نَادَىٰ رَبَّهُ نِدَاءً خَفِيًّا"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "tafseer_03",
+          "episodeNumber": 3,
+          "title": "سورة يوسف: أحسن القصص ومعالم اليقين والفرج بعد المحن",
+          "seriesId": "series_tafseer",
+          "seriesTitle": "سلسلة التفسير والتدبر",
+          "topicId": "tafseer_tadabbur",
+          "topicDisplayName": "التفسير والتدبر",
+          "durationSeconds": 3100,
+          "durationFormatted": "٥١ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tafseer_03.mp3",
+          "recordingDate": "المجلس الثالث",
+          "recordingLocation": "القاهرة",
+          "summary": "أحسن القصص وما فيها من عبر الصبر على كيد الإخوة والجب والافتراء والسجن حتى التمكين والعز في الأرض، وحفظ الله لأوليائه.",
+          "keyTakeaways": [
+            "إن مع العسر يسراً وأن الفرج آت لا محالة بعد اشتداد الظلمة.",
+            "عفة يوسف عليه السلام وثباته في وجه الفتنة: معاذ الله.",
+            "العفو عند المقدرة: لا تثريب عليكم اليوم يغفر الله لكم."
+          ],
+          "tags": [
+            "تفسير",
+            "يوسف",
+            "صبر",
+            "فرج"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِنَّهُ مَن يَتَّقِ وَيَصْبِرْ فَإِنَّ اللَّهَ لَا يُضِيعُ أَجْرَ الْمُحْسِنِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "tafseer_04",
+          "episodeNumber": 4,
+          "title": "سورة الحجرات: دستور الأخلاق والآداب القرآنية الرفيعة",
+          "seriesId": "series_tafseer",
+          "seriesTitle": "سلسلة التفسير والتدبر",
+          "topicId": "tafseer_tadabbur",
+          "topicDisplayName": "التفسير والتدبر",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tafseer_04.mp3",
+          "recordingDate": "المجلس الرابع",
+          "recordingLocation": "القاهرة",
+          "summary": "تفسير سورة الأخلاق، الأدب مع الله ورسوله، التثبت من الأخبار ونبذ الفسوق، تحريم الغيبة والنميمة والسخرية والتجسس، وميزان التقوى.",
+          "keyTakeaways": [
+            "التثبت من الشائعات والأخبار: إن جاءكم فاسق بنبأ فتبينوا.",
+            "حرمة عرض المسلم ودمه وماله وتجريم الغيبة والهمز واللمز.",
+            "إن أكرمكم عند الله أتقاكم: إسقاط التفاخر بالأنساب والأحساب."
+          ],
+          "tags": [
+            "تفسير",
+            "الحجرات",
+            "أخلاق",
+            "آداب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَا أَيُّهَا الَّذِينَ آمَنُوا اجْتَنِبُوا كَثِيرًا مِّنَ الظَّنِّ"
+          ],
+          "relatedHadiths": []
+        }
+      ]
+    },
+    {
+      "id": "series_tazkiyah",
+      "title": "سلسلة الرقائق والخواطر",
+      "topicId": "tazkiyah_khawatir",
+      "bookId": null,
+      "description": "خواطر إيمانية ولمسات وجدانية في أدب القلوب ومناجاة الأسحار وأعمال القلوب.",
+      "totalEpisodes": 4,
+      "isCompleted": true,
+      "coverEmoji": "🌙",
+      "recordingPeriod": "2013 - 2016",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "khawatir_01",
+          "episodeNumber": 1,
+          "title": "أدب الخلاف وسعة الصدر وسلامة القلوب في الإسلام",
+          "seriesId": "series_tazkiyah",
+          "seriesTitle": "سلسلة الرقائق والخواطر",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والخواطر",
+          "durationSeconds": 1200,
+          "durationFormatted": "٢٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khawatir_01.mp3",
+          "recordingDate": "خاطرة إيمانية",
+          "recordingLocation": "القاهرة",
+          "summary": "كيف رعى السلف الصالح أدب الاختلاف في المسائل الاجتهادية، والحذر من التنازع والفرقة والبغضاء التي تفسد الدين وتقطع الأرحام.",
+          "keyTakeaways": [
+            "الاختلاف في الفروع رحمة وسعة، والتنازع في القلوب فتنة وهلاك.",
+            "حسن الظن بالمسلمين وحمل كلامهم على أحسن المحامل والمقاصد.",
+            "تقديم الأخوة الإيمانية وحفظ الود على الخلافات الجزئية."
+          ],
+          "tags": [
+            "رقائق",
+            "أخلاق",
+            "سلامة الصدر"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَلَا تَنَازَعُوا فَتَفْشَلُوا وَتَذْهَبَ رِيحُكُمْ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "khawatir_02",
+          "episodeNumber": 2,
+          "title": "خاطرة الفجر: بركة البكور ومناجاة الأسحار",
+          "seriesId": "series_tazkiyah",
+          "seriesTitle": "سلسلة الرقائق والخواطر",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والخواطر",
+          "durationSeconds": 900,
+          "durationFormatted": "١٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khawatir_02.mp3",
+          "recordingDate": "خاطرة فجرية",
+          "recordingLocation": "القاهرة",
+          "summary": "فضل صلاة الفجر في جماعة، ركعتي الفجر وما فيهما من خير الدنيا، والنفحات الربانية التي تتنزل في ثلث الليل الأخير للذاكرين والمستغفرين.",
+          "keyTakeaways": [
+            "ركعتا الفجر خير من الدنيا وما فيها.",
+            "من صلى الصبح فهو في ذمة الله ورعايته طوال يومه.",
+            "الاستغفار بالأسحار من أعظم صفات أهل الجنة المقربين."
+          ],
+          "tags": [
+            "فجر",
+            "استغفار",
+            "أسحار"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالْمُسْتَغْفِرِينَ بِالْأَسْحَارِ"
+          ],
+          "relatedHadiths": [
+            "اللهم بارك لأمتي في بكورها"
+          ]
+        },
+        {
+          "id": "khawatir_03",
+          "episodeNumber": 3,
+          "title": "عجائب قيام الليل وحلاوة الخلوة بالرحمن",
+          "seriesId": "series_tazkiyah",
+          "seriesTitle": "سلسلة الرقائق والخواطر",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والخواطر",
+          "durationSeconds": 1500,
+          "durationFormatted": "٢٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khawatir_03.mp3",
+          "recordingDate": "موعظة قلبية",
+          "recordingLocation": "القاهرة",
+          "summary": "شرف المؤمن في قيام الليل، كيف كان النبي ﷺ يصف قدميه حتى تتفطر، حلاوة الدمعة الخالصة في الظلام وأثرها في تنوير الوجه وراحة القلب.",
+          "keyTakeaways": [
+            "قيام الليل دأب الصالحين ومطردة للداء عن الجسد.",
+            "لذة المناجاة في جوف الليل لا تضاهيها لذائذ الدنيا بأسرها.",
+            "أقرب ما يكون الرب من عبده في جوف الليل الآخر."
+          ],
+          "tags": [
+            "قيام الليل",
+            "تهجد",
+            "خشوع"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "تَتَجَافَىٰ جُنُوبُهُمْ عَنِ الْمَضَاجِعِ يَدْعُونَ رَبَّهُمْ خَوْفًا وَطَمَعًا"
+          ],
+          "relatedHadiths": [
+            "شرف المؤمن قيامه بالليل"
+          ]
+        },
+        {
+          "id": "khawatir_04",
+          "episodeNumber": 4,
+          "title": "أعمال القلوب والشوق إلى الله ولذة الأنس به",
+          "seriesId": "series_tazkiyah",
+          "seriesTitle": "سلسلة الرقائق والخواطر",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والخواطر",
+          "durationSeconds": 1800,
+          "durationFormatted": "٣٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khawatir_04.mp3",
+          "recordingDate": "موعظة قلبية",
+          "recordingLocation": "القاهرة",
+          "summary": "تفاضل الأعمال بتفاضل ما في القلوب من الإخلاص والتعظيم والمحبة، كيف يحيي العبد جذوة الشوق إلى لقاء الله والرضا به رباً وإلهاً.",
+          "keyTakeaways": [
+            "القلب ملك الأعضاء والجوارح تابعة له في الصلاح والفساد.",
+            "المحبة والخوف والرجاء أركان عبودية القلب للرحمن.",
+            "لذة الأنس بالله تسلّي المؤمن عن كل فقد وفوات في الدنيا."
+          ],
+          "tags": [
+            "أعمال القلوب",
+            "شوق",
+            "محبة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ لَا يَنفَعُ مَالٌ وَلَا بَنُونَ * إِلَّا مَنْ أَتَى اللَّهَ بِقَلْبٍ سَلِيمٍ"
+          ],
+          "relatedHadiths": []
+        }
+      ]
+    },
+    {
+      "id": "series_fiqh_aqeedah",
+      "title": "سلسلة الفقه والعقيدة",
+      "topicId": "aqeedah_tawheed",
+      "bookId": "book_tawheed",
+      "description": "شرح قواعد التوحيد الصافي والصفة العملية للعبادات والصلوات.",
+      "totalEpisodes": 3,
+      "isCompleted": true,
+      "coverEmoji": "⚖️",
+      "recordingPeriod": "2012 - 2014",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "fiqh_01",
+          "episodeNumber": 1,
+          "title": "فقه القلوب وحقيقة تجريد الإخلاص لله",
+          "seriesId": "series_fiqh_aqeedah",
+          "seriesTitle": "سلسلة الفقه والعقيدة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "الفقه والعقيدة",
+          "durationSeconds": 2400,
+          "durationFormatted": "٤٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fiqh_01.mp3",
+          "recordingDate": "المجلس الأول",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح حديث إنما الأعمال بالنيات، الفارق بين الرياء الخفي والعمل الصالح، وكيف يحفظ المسلم عمله من الإحباط والضياع بإخلاص القصد لله.",
+          "keyTakeaways": [
+            "النية الصالحة تحول العادات اليومية إلى عبادات مأجورة.",
+            "الرياء والسمعة محبطان للأعمال ومفسدان للقلوب.",
+            "تجريد المتابعة للرسول ﷺ مع إخلاص العمل لله هما شرطا قبول العبادة."
+          ],
+          "tags": [
+            "إخلاص",
+            "نية",
+            "فقه القلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ"
+          ],
+          "relatedHadiths": [
+            "إنما الأعمال بالنيات"
+          ]
+        },
+        {
+          "id": "fiqh_02",
+          "episodeNumber": 2,
+          "title": "التوحيد والصمدية: مقومات التوحيد وأثره في تكفير الذنوب",
+          "seriesId": "series_fiqh_aqeedah",
+          "seriesTitle": "سلسلة الفقه والعقيدة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "الفقه والعقيدة",
+          "durationSeconds": 2700,
+          "durationFormatted": "٤٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fiqh_02.mp3",
+          "recordingDate": "المجلس الثاني",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح اسم الله الصمد وتوحيد العبادة، حديث البطاقة العظيم ورجحان لا إله إلا الله بسجلات الذنوب، وأثر العقيدة في تحرير النفس من الخوف.",
+          "keyTakeaways": [
+            "التوحيد أعظم حسنة وأقوى سبب لتكفير كبائر الذنوب والخطايا.",
+            "معنى الصمد: الذي تصمد وتلجأ إليه الخلائق كلها في حوائجها.",
+            "الحرية الحقيقية تكمن في العبودية الكاملة لله وحده دون سواه."
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "الصمد"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "قُلْ هُوَ اللَّهُ أَحَدٌ * اللَّهُ الصَّمَدُ"
+          ],
+          "relatedHadiths": [
+            "حديث البطاقة: فتوضع البطاقة في كفة والسجلات في كفة فطاشت السجلات"
+          ]
+        },
+        {
+          "id": "fiqh_03",
+          "episodeNumber": 3,
+          "title": "الصفة العملية لصلاة النبي ﷺ من التكبير للتسليم والخشوع",
+          "seriesId": "series_fiqh_aqeedah",
+          "seriesTitle": "سلسلة الفقه والعقيدة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "الفقه والعقيدة",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fiqh_03.mp3",
+          "recordingDate": "المجلس الثالث",
+          "recordingLocation": "القاهرة",
+          "summary": "بيان مفصل لأركان وسنن وهيئات الصلاة كما صلاها رسول الله ﷺ، الطمأنينة في الركوع والسجود، وعلاج السهو والوسوسة لتحصيل الخشوع التام.",
+          "keyTakeaways": [
+            "صلوا كما رأيتموني أصلي: وجوب الاقتداء بالهدي النبوي في الصلاة.",
+            "الطمأنينة ركن أساسي لا تصح الصلاة بدون استقراره.",
+            "استحضار الوقوف بين يدي الله يطرد وساوس الشيطان ويجلب الخشوع."
+          ],
+          "tags": [
+            "صلاة",
+            "فقه",
+            "خشوع",
+            "صفة الصلاة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "قَدْ أَفْلَحَ الْمُؤْمِنُونَ * الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ"
+          ],
+          "relatedHadiths": [
+            "صلوا كما رأيتموني أصلي"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series_khutbah",
+      "title": "خطب ومواعظ الجمعة",
+      "topicId": "khutbah_waaz",
+      "bookId": null,
+      "description": "خطب منبرية خالدة في الدار الآخرة وحرمات المسلمين ونداء التائبين.",
+      "totalEpisodes": 4,
+      "isCompleted": true,
+      "coverEmoji": "🎙️",
+      "recordingPeriod": "2011 - 2017",
+      "primaryLocation": "مساجد القاهرة",
+      "lessons": [
+        {
+          "id": "khutbah_01",
+          "episodeNumber": 1,
+          "title": "خطبة: التوكل على الله واليقين في زمن الشدائد",
+          "seriesId": "series_khutbah",
+          "seriesTitle": "خطب ومواعظ الجمعة",
+          "topicId": "khutbah_waaz",
+          "topicDisplayName": "الخطب والمواعظ",
+          "durationSeconds": 2100,
+          "durationFormatted": "٣٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khutbah_01.mp3",
+          "recordingDate": "خطبة جمعة",
+          "recordingLocation": "مسجد بلال - القاهرة",
+          "summary": "كيف يثبت المسلم عند تلاطم أمواج الفتن، معنى حسبنا الله ونعم الوكيل، ونماذج من توكل الأنبياء والصحابة الكرام.",
+          "keyTakeaways": [
+            "التوكل صدق اعتماد القلب على الله مع مباشرة الأسباب المشروعة.",
+            "حسبنا الله ونعم الوكيل أمان الخائفين وسلاح المستضعفين.",
+            "من توكل على الله كفاه ما أهمه من أمر دينه ودنياه."
+          ],
+          "tags": [
+            "خطبة",
+            "توكل",
+            "يقين"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "khutbah_02",
+          "episodeNumber": 2,
+          "title": "خطبة: نداء إلى التائبين وفرح الرب بإنابة عبده",
+          "seriesId": "series_khutbah",
+          "seriesTitle": "خطب ومواعظ الجمعة",
+          "topicId": "khutbah_waaz",
+          "topicDisplayName": "الخطب والمواعظ",
+          "durationSeconds": 2400,
+          "durationFormatted": "٤٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khutbah_02.mp3",
+          "recordingDate": "خطبة جمعة",
+          "recordingLocation": "القاهرة",
+          "summary": "سعة رحمة الله ومغفرته للذنوب جميعاً، قصة قاتل المائة نفس، وبيان فرح الله بتوبة عبده أشد من فرح الفاقد لراحلته في الصحراء.",
+          "keyTakeaways": [
+            "باب التوبة مفتوح لا يُغلق حتى تطلع الشمس من مغربها أو تغرغر الروح.",
+            "التوبة النصوح تبدل السيئات إلى حسنات بفضل الله العظيم.",
+            "لا تيأس من رحمة الله مهما عظمت ذنوبك فإن عفو الله أعظم."
+          ],
+          "tags": [
+            "خطبة",
+            "توبة",
+            "رجاء",
+            "مغفرة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنفُسِهِمْ لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ"
+          ],
+          "relatedHadiths": [
+            "لله أشد فرحاً بتوبة عبده حين يتوب إليه"
+          ]
+        },
+        {
+          "id": "khutbah_03",
+          "episodeNumber": 3,
+          "title": "خطبة: الدار الآخرة وحقيقة الدنيا وسرعة زوالها",
+          "seriesId": "series_khutbah",
+          "seriesTitle": "خطب ومواعظ الجمعة",
+          "topicId": "khutbah_waaz",
+          "topicDisplayName": "الخطب والمواعظ",
+          "durationSeconds": 2200,
+          "durationFormatted": "٣٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khutbah_03.mp3",
+          "recordingDate": "خطبة جمعة",
+          "recordingLocation": "القاهرة",
+          "summary": "وصف مشاهد القيامة، الصراط والميزان والجنة والنار، هوان الدنيا عند الله كجناح بعوضة، وضرورة التزود ليوم المعاد.",
+          "keyTakeaways": [
+            "الدنيا مزرعة الآخرة ومعبر زائل لا دار قرار واستقرار.",
+            "الكيس من دان نفسه وعمل لما بعد الموت والعاجز من أتبع نفسه هواها.",
+            "النعيم الحقيقي هو الفوز برضوان الله والنظر إلى وجهه الكريم."
+          ],
+          "tags": [
+            "خطبة",
+            "الآخرة",
+            "الجنة",
+            "الميزان"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَمَا هَٰذِهِ الْحَيَاةُ الدُّنْيَا إِلَّا لَهْوٌ وَلَعِبٌ وَإِنَّ الدَّارَ الْآخِرَةَ لَهِيَ الْحَيَوَانُ"
+          ],
+          "relatedHadiths": [
+            "لو كانت الدنيا تزن عند الله جناح بعوضة ما سقى كافراً منها شربة ماء"
+          ]
+        },
+        {
+          "id": "khutbah_04",
+          "episodeNumber": 4,
+          "title": "خطبة: تعظيم شعائر الله وحرمة دماء المسلمين وأعراضهم",
+          "seriesId": "series_khutbah",
+          "seriesTitle": "خطب ومواعظ الجمعة",
+          "topicId": "khutbah_waaz",
+          "topicDisplayName": "الخطب والمواعظ",
+          "durationSeconds": 2300,
+          "durationFormatted": "٣٨ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khutbah_04.mp3",
+          "recordingDate": "خطبة جمعة",
+          "recordingLocation": "القاهرة",
+          "summary": "عظمة حرمة المسلم عند الله وأن زوال الدنيا أهون عند الله من قتل مؤمن بغير حق، التحذير من استباحة الأعراض وتأجيج الفتن.",
+          "keyTakeaways": [
+            "لزوال الدنيا أهون عند الله من دم امرئ مسلم يُسفك بغير حق.",
+            "تعظيم حرمات الله وتقوى القلوب أمارة الإيمان الصادق.",
+            "المسلم من سلم المسلمون من لسانه ويده."
+          ],
+          "tags": [
+            "خطبة",
+            "حرمات",
+            "دماء",
+            "أخلاق"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "ذَٰلِكَ وَمَن يُعَظِّمْ شَعَائِرَ اللَّهِ فَإِنَّهَا مِن تَقْوَى الْقُلُوبِ"
+          ],
+          "relatedHadiths": [
+            "لزوال الدنيا أهون على الله من قتل رجل مسلم"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series_mada_tafal",
+      "title": "سلسلة ماذا تفعل لو؟",
+      "topicId": "tazkiyah_khawatir",
+      "bookId": null,
+      "description": "من أشهر سلاسل الشيخ الماتعة، تطرح تساؤلات ومواقف عملية إيمانية في حياة المسلم وكيفية التعامل معها.",
+      "totalEpisodes": 10,
+      "isCompleted": true,
+      "coverEmoji": "❓",
+      "recordingPeriod": "2015",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "mada_tafal_1",
+          "episodeNumber": 1,
+          "title": "ماذا تفعل لو - الحلقة 1",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2460,
+          "durationFormatted": "41 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_1.mp3",
+          "recordingDate": "الحلقة 1",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_2",
+          "episodeNumber": 2,
+          "title": "ماذا تفعل لو - الحلقة 2",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2520,
+          "durationFormatted": "42 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_2.mp3",
+          "recordingDate": "الحلقة 2",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_3",
+          "episodeNumber": 3,
+          "title": "ماذا تفعل لو - الحلقة 3",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2580,
+          "durationFormatted": "43 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_3.mp3",
+          "recordingDate": "الحلقة 3",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_4",
+          "episodeNumber": 4,
+          "title": "ماذا تفعل لو - الحلقة 4",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2640,
+          "durationFormatted": "44 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_4.mp3",
+          "recordingDate": "الحلقة 4",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_5",
+          "episodeNumber": 5,
+          "title": "ماذا تفعل لو - الحلقة 5",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2700,
+          "durationFormatted": "45 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_5.mp3",
+          "recordingDate": "الحلقة 5",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_6",
+          "episodeNumber": 6,
+          "title": "ماذا تفعل لو - الحلقة 6",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2760,
+          "durationFormatted": "46 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_6.mp3",
+          "recordingDate": "الحلقة 6",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_7",
+          "episodeNumber": 7,
+          "title": "ماذا تفعل لو - الحلقة 7",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2820,
+          "durationFormatted": "47 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_7.mp3",
+          "recordingDate": "الحلقة 7",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_8",
+          "episodeNumber": 8,
+          "title": "ماذا تفعل لو - الحلقة 8",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2880,
+          "durationFormatted": "48 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_8.mp3",
+          "recordingDate": "الحلقة 8",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_9",
+          "episodeNumber": 9,
+          "title": "ماذا تفعل لو - الحلقة 9",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 2940,
+          "durationFormatted": "49 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_9.mp3",
+          "recordingDate": "الحلقة 9",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "mada_tafal_10",
+          "episodeNumber": 10,
+          "title": "ماذا تفعل لو - الحلقة 10",
+          "seriesId": "series_mada_tafal",
+          "seriesTitle": "سلسلة ماذا تفعل لو؟",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "تزكية النفوس",
+          "durationSeconds": 3000,
+          "durationFormatted": "50 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/mada_tafal_10.mp3",
+          "recordingDate": "الحلقة 10",
+          "recordingLocation": "القاهرة",
+          "summary": "مواقف وتساؤلات إيمانية يمر بها المسلم في حياته اليومية وكيفية تجاوزها.",
+          "keyTakeaways": [
+            "الصدق مع الله",
+            "مراقبة النفس",
+            "الاستعداد للآخرة"
+          ],
+          "tags": [
+            "تزكية",
+            "مواقف",
+            "عملي"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        }
+      ]
+    },
+    {
+      "id": "series_ahwal",
+      "title": "سلسلة الدار الآخرة وأهوال القيامة",
+      "topicId": "aqeedah_tawheed",
+      "bookId": null,
+      "description": "رحلة القلوب إلى الدار الآخرة، من الموت والقبر إلى الحشر والصراط والميزان والجنة والنار.",
+      "totalEpisodes": 15,
+      "isCompleted": true,
+      "coverEmoji": "⚖️",
+      "recordingPeriod": "2014",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "ahwal_1",
+          "episodeNumber": 1,
+          "title": "حقيقة الموت وسكراته",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2730,
+          "durationFormatted": "45 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_1.mp3",
+          "recordingDate": "المجلس 1",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ حقيقة الموت وسكراته وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_2",
+          "episodeNumber": 2,
+          "title": "عذاب القبر ونعيمه",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2760,
+          "durationFormatted": "46 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_2.mp3",
+          "recordingDate": "المجلس 2",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ عذاب القبر ونعيمه وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_3",
+          "episodeNumber": 3,
+          "title": "النفخ في الصور",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2790,
+          "durationFormatted": "46 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_3.mp3",
+          "recordingDate": "المجلس 3",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ النفخ في الصور وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_4",
+          "episodeNumber": 4,
+          "title": "البعث والنشور",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2820,
+          "durationFormatted": "47 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_4.mp3",
+          "recordingDate": "المجلس 4",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ البعث والنشور وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_5",
+          "episodeNumber": 5,
+          "title": "أرض المحشر",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2850,
+          "durationFormatted": "47 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_5.mp3",
+          "recordingDate": "المجلس 5",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ أرض المحشر وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_6",
+          "episodeNumber": 6,
+          "title": "دنو الشمس والعرق",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2880,
+          "durationFormatted": "48 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_6.mp3",
+          "recordingDate": "المجلس 6",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ دنو الشمس والعرق وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_7",
+          "episodeNumber": 7,
+          "title": "الشفاعة العظمى",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2910,
+          "durationFormatted": "48 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_7.mp3",
+          "recordingDate": "المجلس 7",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ الشفاعة العظمى وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_8",
+          "episodeNumber": 8,
+          "title": "الحساب وتطاير الصحف",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2940,
+          "durationFormatted": "49 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_8.mp3",
+          "recordingDate": "المجلس 8",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ الحساب وتطاير الصحف وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_9",
+          "episodeNumber": 9,
+          "title": "الميزان",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 2970,
+          "durationFormatted": "49 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_9.mp3",
+          "recordingDate": "المجلس 9",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ الميزان وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_10",
+          "episodeNumber": 10,
+          "title": "الحوض المورود",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3000,
+          "durationFormatted": "50 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_10.mp3",
+          "recordingDate": "المجلس 10",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ الحوض المورود وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_11",
+          "episodeNumber": 11,
+          "title": "الصراط",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3030,
+          "durationFormatted": "50 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_11.mp3",
+          "recordingDate": "المجلس 11",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ الصراط وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_12",
+          "episodeNumber": 12,
+          "title": "القنطرة والمقاصة",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3060,
+          "durationFormatted": "51 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_12.mp3",
+          "recordingDate": "المجلس 12",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ القنطرة والمقاصة وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_13",
+          "episodeNumber": 13,
+          "title": "صفة النار وأهوالها",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3090,
+          "durationFormatted": "51 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_13.mp3",
+          "recordingDate": "المجلس 13",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ صفة النار وأهوالها وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_14",
+          "episodeNumber": 14,
+          "title": "صفة الجنة ونعيمها",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3120,
+          "durationFormatted": "52 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_14.mp3",
+          "recordingDate": "المجلس 14",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ صفة الجنة ونعيمها وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "ahwal_15",
+          "episodeNumber": 15,
+          "title": "رؤية وجه الله الكريم",
+          "seriesId": "series_ahwal",
+          "seriesTitle": "سلسلة الدار الآخرة",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3150,
+          "durationFormatted": "52 دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/ahwal_15.mp3",
+          "recordingDate": "المجلس 15",
+          "recordingLocation": "القاهرة",
+          "summary": "شرح تفصيلي وإيماني لـ رؤية وجه الله الكريم وما يجب على المسلم اعتقاده والعمل له.",
+          "keyTakeaways": [
+            "اليقين بالآخرة",
+            "الخوف والرجاء",
+            "الاستعداد ليوم الرحيل"
+          ],
+          "tags": [
+            "الآخرة",
+            "القيامة",
+            "عقيدة"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ"
+          ],
+          "relatedHadiths": []
+        }
+      ]
+    },
+    {
+      "id": "series_sinaat_rijal",
+      "title": "سلسلة صناعة الرجال",
+      "topicId": "tazkiyah_khawatir",
+      "bookId": null,
+      "description": "تربية الجيل وصناعة الرجال على منهاج النبوة، وصفات الرجولة في القرآن والسنة.",
+      "totalEpisodes": 8,
+      "isCompleted": true,
+      "coverEmoji": "🛡️",
+      "recordingPeriod": "2016",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "rijal_1",
+          "episodeNumber": 1,
+          "title": "صناعة الرجال - المجلس 1",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_1.mp3",
+          "recordingDate": "المجلس 1",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "rijal_2",
+          "episodeNumber": 2,
+          "title": "صناعة الرجال - المجلس 2",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_2.mp3",
+          "recordingDate": "المجلس 2",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "rijal_3",
+          "episodeNumber": 3,
+          "title": "صناعة الرجال - المجلس 3",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_3.mp3",
+          "recordingDate": "المجلس 3",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "rijal_4",
+          "episodeNumber": 4,
+          "title": "صناعة الرجال - المجلس 4",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_4.mp3",
+          "recordingDate": "المجلس 4",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "rijal_5",
+          "episodeNumber": 5,
+          "title": "صناعة الرجال - المجلس 5",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_5.mp3",
+          "recordingDate": "المجلس 5",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "rijal_6",
+          "episodeNumber": 6,
+          "title": "صناعة الرجال - المجلس 6",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_6.mp3",
+          "recordingDate": "المجلس 6",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "rijal_7",
+          "episodeNumber": 7,
+          "title": "صناعة الرجال - المجلس 7",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_7.mp3",
+          "recordingDate": "المجلس 7",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        },
+        {
+          "id": "rijal_8",
+          "episodeNumber": 8,
+          "title": "صناعة الرجال - المجلس 8",
+          "seriesId": "series_sinaat_rijal",
+          "seriesTitle": "سلسلة صناعة الرجال",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "الرقائق والتربية",
+          "durationSeconds": 3000,
+          "durationFormatted": "٥٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/rijal_8.mp3",
+          "recordingDate": "المجلس 8",
+          "recordingLocation": "القاهرة",
+          "summary": "معالم التربية الجادة وتحمل المسؤولية في عصر الفتن.",
+          "keyTakeaways": [
+            "الهمة العالية",
+            "تحمل المسؤولية",
+            "القدوة الحسنة"
+          ],
+          "tags": [
+            "تربية",
+            "همة",
+            "شباب"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ"
+          ],
+          "relatedHadiths": []
+        }
+      ]
+    },
+    {
+      "id": "series_fiqh_aqeedah",
+      "title": "شرح كتاب التوحيد",
+      "topicId": "aqeedah_tawheed",
+      "bookId": "book_tawheed",
+      "description": "شرح مفصل لكتاب التوحيد للإمام محمد بن عبد الوهاب، وتأصيل عقيدة أهل السنة والجماعة.",
+      "totalEpisodes": 20,
+      "isCompleted": true,
+      "coverEmoji": "📖",
+      "recordingPeriod": "2018",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "tawheed_1",
+          "episodeNumber": 1,
+          "title": "شرح كتاب التوحيد - الباب 1",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_1.mp3",
+          "recordingDate": "الدرس 1",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_2",
+          "episodeNumber": 2,
+          "title": "شرح كتاب التوحيد - الباب 2",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_2.mp3",
+          "recordingDate": "الدرس 2",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_3",
+          "episodeNumber": 3,
+          "title": "شرح كتاب التوحيد - الباب 3",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_3.mp3",
+          "recordingDate": "الدرس 3",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_4",
+          "episodeNumber": 4,
+          "title": "شرح كتاب التوحيد - الباب 4",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_4.mp3",
+          "recordingDate": "الدرس 4",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_5",
+          "episodeNumber": 5,
+          "title": "شرح كتاب التوحيد - الباب 5",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_5.mp3",
+          "recordingDate": "الدرس 5",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_6",
+          "episodeNumber": 6,
+          "title": "شرح كتاب التوحيد - الباب 6",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_6.mp3",
+          "recordingDate": "الدرس 6",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_7",
+          "episodeNumber": 7,
+          "title": "شرح كتاب التوحيد - الباب 7",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_7.mp3",
+          "recordingDate": "الدرس 7",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_8",
+          "episodeNumber": 8,
+          "title": "شرح كتاب التوحيد - الباب 8",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_8.mp3",
+          "recordingDate": "الدرس 8",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_9",
+          "episodeNumber": 9,
+          "title": "شرح كتاب التوحيد - الباب 9",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_9.mp3",
+          "recordingDate": "الدرس 9",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_10",
+          "episodeNumber": 10,
+          "title": "شرح كتاب التوحيد - الباب 10",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_10.mp3",
+          "recordingDate": "الدرس 10",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_11",
+          "episodeNumber": 11,
+          "title": "شرح كتاب التوحيد - الباب 11",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_11.mp3",
+          "recordingDate": "الدرس 11",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_12",
+          "episodeNumber": 12,
+          "title": "شرح كتاب التوحيد - الباب 12",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_12.mp3",
+          "recordingDate": "الدرس 12",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_13",
+          "episodeNumber": 13,
+          "title": "شرح كتاب التوحيد - الباب 13",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_13.mp3",
+          "recordingDate": "الدرس 13",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_14",
+          "episodeNumber": 14,
+          "title": "شرح كتاب التوحيد - الباب 14",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_14.mp3",
+          "recordingDate": "الدرس 14",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_15",
+          "episodeNumber": 15,
+          "title": "شرح كتاب التوحيد - الباب 15",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_15.mp3",
+          "recordingDate": "الدرس 15",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_16",
+          "episodeNumber": 16,
+          "title": "شرح كتاب التوحيد - الباب 16",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_16.mp3",
+          "recordingDate": "الدرس 16",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_17",
+          "episodeNumber": 17,
+          "title": "شرح كتاب التوحيد - الباب 17",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_17.mp3",
+          "recordingDate": "الدرس 17",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_18",
+          "episodeNumber": 18,
+          "title": "شرح كتاب التوحيد - الباب 18",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_18.mp3",
+          "recordingDate": "الدرس 18",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_19",
+          "episodeNumber": 19,
+          "title": "شرح كتاب التوحيد - الباب 19",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_19.mp3",
+          "recordingDate": "الدرس 19",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        },
+        {
+          "id": "tawheed_20",
+          "episodeNumber": 20,
+          "title": "شرح كتاب التوحيد - الباب 20",
+          "seriesId": "series_tawheed",
+          "seriesTitle": "شرح كتاب التوحيد",
+          "topicId": "aqeedah_tawheed",
+          "topicDisplayName": "العقيدة",
+          "durationSeconds": 3300,
+          "durationFormatted": "٥٥ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/tawheed_20.mp3",
+          "recordingDate": "الدرس 20",
+          "recordingLocation": "القاهرة",
+          "summary": "تأصيل مسائل التوحيد والتحذير من الشركيات والبدع.",
+          "keyTakeaways": [
+            "إخلاص العبادة لله",
+            "خطر الشرك الخفي",
+            "حماية جناب التوحيد"
+          ],
+          "tags": [
+            "توحيد",
+            "عقيدة",
+            "شرح"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ"
+          ],
+          "relatedHadiths": [
+            "حق الله على العبيد أن يعبدوه ولا يشركوا به شيئا"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "series_tariq",
+      "title": "شرح كتاب الفوائد (صياغة الطريق)",
+      "topicId": "tazkiyah_khawatir",
+      "bookId": "book_fawaid",
+      "description": "غوص في بحار الفوائد لابن القيم لاستخراج درر التربية وصلاح القلوب.",
+      "totalEpisodes": 12,
+      "isCompleted": true,
+      "coverEmoji": "✨",
+      "recordingPeriod": "2019",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "fawaid_1",
+          "episodeNumber": 1,
+          "title": "شرح الفوائد - الفائدة 1",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_1.mp3",
+          "recordingDate": "الدرس 1",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_2",
+          "episodeNumber": 2,
+          "title": "شرح الفوائد - الفائدة 2",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_2.mp3",
+          "recordingDate": "الدرس 2",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_3",
+          "episodeNumber": 3,
+          "title": "شرح الفوائد - الفائدة 3",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_3.mp3",
+          "recordingDate": "الدرس 3",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_4",
+          "episodeNumber": 4,
+          "title": "شرح الفوائد - الفائدة 4",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_4.mp3",
+          "recordingDate": "الدرس 4",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_5",
+          "episodeNumber": 5,
+          "title": "شرح الفوائد - الفائدة 5",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_5.mp3",
+          "recordingDate": "الدرس 5",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_6",
+          "episodeNumber": 6,
+          "title": "شرح الفوائد - الفائدة 6",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_6.mp3",
+          "recordingDate": "الدرس 6",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_7",
+          "episodeNumber": 7,
+          "title": "شرح الفوائد - الفائدة 7",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_7.mp3",
+          "recordingDate": "الدرس 7",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_8",
+          "episodeNumber": 8,
+          "title": "شرح الفوائد - الفائدة 8",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_8.mp3",
+          "recordingDate": "الدرس 8",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_9",
+          "episodeNumber": 9,
+          "title": "شرح الفوائد - الفائدة 9",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_9.mp3",
+          "recordingDate": "الدرس 9",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_10",
+          "episodeNumber": 10,
+          "title": "شرح الفوائد - الفائدة 10",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_10.mp3",
+          "recordingDate": "الدرس 10",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_11",
+          "episodeNumber": 11,
+          "title": "شرح الفوائد - الفائدة 11",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_11.mp3",
+          "recordingDate": "الدرس 11",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        },
+        {
+          "id": "fawaid_12",
+          "episodeNumber": 12,
+          "title": "شرح الفوائد - الفائدة 12",
+          "seriesId": "series_tariq",
+          "seriesTitle": "شرح كتاب الفوائد",
+          "topicId": "tazkiyah_khawatir",
+          "topicDisplayName": "التزكية",
+          "durationSeconds": 2800,
+          "durationFormatted": "٤٦ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/fawaid_12.mp3",
+          "recordingDate": "الدرس 12",
+          "recordingLocation": "القاهرة",
+          "summary": "تأملات وفوائد إيمانية تصيغ طريق السالك إلى الله.",
+          "keyTakeaways": [
+            "مراقبة القلب",
+            "الإخلاص",
+            "التوبة"
+          ],
+          "tags": [
+            "ابن القيم",
+            "فوائد",
+            "قلوب"
+          ],
+          "chapters": [],
+          "relatedVerses": [],
+          "relatedHadiths": []
+        }
+      ]
+    },
+    {
+      "id": "series_khulafa",
+      "title": "سلسلة الخلفاء الراشدين",
+      "topicId": "seerah_maghazi",
+      "bookId": null,
+      "description": "سيرة أبي بكر وعمر وعثمان وعلي رضي الله عنهم أجمعين، وبطولات الجيل الأول.",
+      "totalEpisodes": 16,
+      "isCompleted": true,
+      "coverEmoji": "👑",
+      "recordingPeriod": "2017",
+      "primaryLocation": "القاهرة",
+      "lessons": [
+        {
+          "id": "khulafa_1",
+          "episodeNumber": 1,
+          "title": "سيرة أبو بكر الصديق - الجزء 1",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_1.mp3",
+          "recordingDate": "الدرس 1",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين أبو بكر الصديق رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "أبو"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_2",
+          "episodeNumber": 2,
+          "title": "سيرة أبو بكر الصديق - الجزء 2",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_2.mp3",
+          "recordingDate": "الدرس 2",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين أبو بكر الصديق رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "أبو"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_3",
+          "episodeNumber": 3,
+          "title": "سيرة أبو بكر الصديق - الجزء 3",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_3.mp3",
+          "recordingDate": "الدرس 3",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين أبو بكر الصديق رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "أبو"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_4",
+          "episodeNumber": 4,
+          "title": "سيرة أبو بكر الصديق - الجزء 4",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_4.mp3",
+          "recordingDate": "الدرس 4",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين أبو بكر الصديق رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "أبو"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_5",
+          "episodeNumber": 5,
+          "title": "سيرة عمر بن الخطاب - الجزء 1",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_5.mp3",
+          "recordingDate": "الدرس 5",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عمر بن الخطاب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عمر"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_6",
+          "episodeNumber": 6,
+          "title": "سيرة عمر بن الخطاب - الجزء 2",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_6.mp3",
+          "recordingDate": "الدرس 6",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عمر بن الخطاب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عمر"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_7",
+          "episodeNumber": 7,
+          "title": "سيرة عمر بن الخطاب - الجزء 3",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_7.mp3",
+          "recordingDate": "الدرس 7",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عمر بن الخطاب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عمر"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_8",
+          "episodeNumber": 8,
+          "title": "سيرة عمر بن الخطاب - الجزء 4",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_8.mp3",
+          "recordingDate": "الدرس 8",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عمر بن الخطاب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عمر"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_9",
+          "episodeNumber": 9,
+          "title": "سيرة عثمان بن عفان - الجزء 1",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_9.mp3",
+          "recordingDate": "الدرس 9",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عثمان بن عفان رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عثمان"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_10",
+          "episodeNumber": 10,
+          "title": "سيرة عثمان بن عفان - الجزء 2",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_10.mp3",
+          "recordingDate": "الدرس 10",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عثمان بن عفان رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عثمان"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_11",
+          "episodeNumber": 11,
+          "title": "سيرة عثمان بن عفان - الجزء 3",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_11.mp3",
+          "recordingDate": "الدرس 11",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عثمان بن عفان رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عثمان"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_12",
+          "episodeNumber": 12,
+          "title": "سيرة عثمان بن عفان - الجزء 4",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_12.mp3",
+          "recordingDate": "الدرس 12",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين عثمان بن عفان رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "عثمان"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_13",
+          "episodeNumber": 13,
+          "title": "سيرة علي بن أبي طالب - الجزء 1",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_13.mp3",
+          "recordingDate": "الدرس 13",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين علي بن أبي طالب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "علي"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_14",
+          "episodeNumber": 14,
+          "title": "سيرة علي بن أبي طالب - الجزء 2",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_14.mp3",
+          "recordingDate": "الدرس 14",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين علي بن أبي طالب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "علي"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_15",
+          "episodeNumber": 15,
+          "title": "سيرة علي بن أبي طالب - الجزء 3",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_15.mp3",
+          "recordingDate": "الدرس 15",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين علي بن أبي طالب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "علي"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        },
+        {
+          "id": "khulafa_16",
+          "episodeNumber": 16,
+          "title": "سيرة علي بن أبي طالب - الجزء 4",
+          "seriesId": "series_khulafa",
+          "seriesTitle": "سلسلة الخلفاء الراشدين",
+          "topicId": "seerah_maghazi",
+          "topicDisplayName": "السيرة والتاريخ",
+          "durationSeconds": 3600,
+          "durationFormatted": "٦٠ دقيقة",
+          "audioUrl": "https://archive.org/download/sheikh_samir_mustafa/khulafa_16.mp3",
+          "recordingDate": "الدرس 16",
+          "recordingLocation": "القاهرة",
+          "summary": "محطات من حياة وفضائل وبطولات أمير المؤمنين علي بن أبي طالب رضي الله عنه.",
+          "keyTakeaways": [
+            "العدل",
+            "الزهد",
+            "التضحية"
+          ],
+          "tags": [
+            "صحابة",
+            "خلفاء",
+            "علي"
+          ],
+          "chapters": [],
+          "relatedVerses": [
+            "وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ"
+          ],
+          "relatedHadiths": [
+            "عليكم بسنتي وسنة الخلفاء الراشدين المهديين من بعدي"
+          ]
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "id": "quote_1",
+      "quote": "إذا أراد الله بعبد خيراً أفرغ قلبه من التعلق بغيره، وصب في قلبه برد اليقين وحسن التوكل عليه.",
+      "sourceSeries": "سلسلة صياغة الطريق",
+      "lessonId": "tariq_03",
+      "tags": [
+        "توكل",
+        "يقين",
+        "أعمال القلوب"
+      ]
+    },
+    {
+      "id": "quote_2",
+      "quote": "الذكر للقلب كالماء للسمك، فكيف يكون حال السمك إذا فارق الماء؟ كذلك يموت القلب إذا فارقه ذكر الله.",
+      "sourceSeries": "سلسلة شرح الوابل الصيب",
+      "lessonId": "wabil_02",
+      "tags": [
+        "ذكر",
+        "حياة القلب"
+      ]
+    },
+    {
+      "id": "quote_3",
+      "quote": "ما ابتلاك ربك ليعذبك، بل ابتلاك ليسمع تضرعك ويرفع درجتك وينقيك من شوائب الغفلة.",
+      "sourceSeries": "سلسلة عقائد البلاء وفقه الابتلاء",
+      "lessonId": "bala_02",
+      "tags": [
+        "ابتلاء",
+        "صبر",
+        "رحمة"
+      ]
+    },
+    {
+      "id": "quote_4",
+      "quote": "النصر لا يأتي بالكثرة ولا بالسلاح وحده، بل ينزل النصر يوم تصدق القلوب وتتجرد الأرواح لربها في خنادق الصبر.",
+      "sourceSeries": "سلسلة المعارك الكبرى",
+      "lessonId": "battles_01",
+      "tags": [
+        "نصر",
+        "بدر",
+        "ثبات"
+      ]
+    }
+  ]
+}

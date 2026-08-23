@@ -1,0 +1,8 @@
+{
+  "name": "الشيخ سمير مصطفى",
+  "description": "تطبيق الدروس والسلاسل العلمية والفوائد للشيخ سمير مصطفى بنمط ألوان الطبيعة الهادئ",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
