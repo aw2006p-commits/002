@@ -340,7 +340,7 @@ fun SearchQuotesScreen(
                         onPlayAtTimestamp = onPlayLessonAtTimestamp,
                         onShare = { shareQuoteData = it },
                         onCopy = {
-                            val copyContent = "« ${quote.quote} »\n📌 المصدر: ${quote.lessonTitle ?: quote.context} (⏱️ الدقيقة ${PlayerState.formatSeconds(quote.timestampSeconds)})\nالشيخ"
+                            val copyContent = "« ${quote.quote} »\n📌 المصدر: ${quote.lessonTitle ?: quote.context} (⏱️ الدقيقة ${quote.timestampFormatted})\nالشيخ سمير مصطفى"
                             clipboardManager.setText(AnnotatedString(copyContent))
                             Toast.makeText(context, "تم نسخ الفائدة ومصدرها إلى الحافظة", Toast.LENGTH_SHORT).show()
                         }
@@ -360,7 +360,7 @@ fun SearchQuotesScreen(
                     ) {
                         Text(text = "✍️", fontSize = 36.sp)
                         Text(
-                            text = if (uiState.searchQuery.isNotBlank()) "لم يتم العثور على قيود مطابقة لبحثك" else "لم تقم بتدوين قيود وملاحظات",
+                            text = if (uiState.searchQuery.isNotBlank()) "لم يتم العثور على قيود مطابقة لبحثك" else "لم تقم بتدوين قيود وملاحظات زمنية بعد",
                             fontSize = (14 * fontScale).sp,
                             color = appColors.textMuted,
                             modifier = Modifier.padding(top = 8.dp)
