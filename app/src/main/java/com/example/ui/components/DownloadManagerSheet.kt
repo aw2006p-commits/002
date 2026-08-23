@@ -63,7 +63,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.local.DownloadedLessonEntity
 import com.example.data.model.Lesson
-import com.example.data.model.SheikhData
 import com.example.download.DownloadProgress
 import com.example.download.DownloadStatus
 import com.example.download.LessonDownloadManager
@@ -307,7 +306,7 @@ fun DownloadManagerSheet(
                 )
 
                 activeDownloadingList.forEach { activeProgress ->
-                    val lesson = SheikhData.allLessons.find { it.id == activeProgress.lessonId }
+                    val lesson = uiState.allLessons.find { it.id == activeProgress.lessonId }
                     if (lesson != null) {
                         Card(
                             modifier = Modifier
@@ -432,7 +431,7 @@ fun DownloadManagerSheet(
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     items(downloadedEntities, key = { it.lessonId }) { entity ->
-                        val lesson = SheikhData.allLessons.find { it.id == entity.lessonId }
+                        val lesson = uiState.allLessons.find { it.id == entity.lessonId }
                         if (lesson != null) {
                             DownloadedLessonRow(
                                 lesson = lesson,
