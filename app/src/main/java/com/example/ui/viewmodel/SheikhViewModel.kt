@@ -1,4 +1,3 @@
-
 package com.example.ui.viewmodel
 
 import android.app.Application
@@ -18,27 +17,28 @@ import com.example.data.model.UnifiedQuiz
 import com.example.data.repository.LessonRepository
 import com.example.data.repository.QuizDataProvider
 import com.example.download.DownloadProgress
-import com.example.download.DownloadStatus
 import com.example.download.LessonDownloadManager
 import com.example.player.AudioPlayerManager
 import com.example.player.PlayerState
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 data class SheikhUiState(
-    val selectedTab: Int = 0, // 0: Home, 1: Lessons, 2: Library, 3: Search/Quotes, 4: Favorites/Downloads
+    val selectedTab: Int = 0,
     val selectedCategory: LessonCategory = LessonCategory.ALL,
     val selectedSeries: SeriesInfo? = null,
     val searchQuery: String = "",
     val quoteQuery: String = "",
     val filteredLessons: List<Lesson> = emptyList(),
     val filteredQuotes: List<SheikhQuote> = emptyList(),
+    val isContentReady: Boolean = false,
     val favoriteIds: Set<String> = emptySet(),
     val playHistory: List<PlayHistoryEntity> = emptyList(),
     val downloadedIds: Set<String> = emptySet(),
@@ -67,7 +67,7 @@ data class UserDataSnapshot(
 class SheikhViewModel(application: Application) : AndroidViewModel(application) {
 
     private val database = AppDatabase.getDatabase(application)
-    val repository = LessonRepository(database.lessonDao())
+    val repository = LessonRepository(database.lessonDao(), application)
     val downloadManager = LessonDownloadManager(application, database.lessonDao())
     val preferencesRepository = UserPreferencesRepository(application)
 
@@ -87,12 +87,23 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
 
     val playerState: StateFlow<PlayerState> = playerManager.playerState
 
-    private val _uiState = MutableStateFlow(
-        SheikhUiState(
-            filteredLessons = repository.allLessons,
-            filteredQuotes = repository.quotes
-        )
-    )
+    // لا نحمل الدروس على الـ Main Thread عند الإنشاء — يمنع تجمّد الـ Splash
+    private val _uiState = MutableStateFlow(SheikhUiState())
+
+    init {
+        viewModelScope.launch {
+            val (lessons, quotes) = withContext(Dispatchers.Default) {
+                repository.allLessons to repository.quotes
+            }
+            _uiState.update {
+                it.copy(
+                    filteredLessons = lessons,
+                    filteredQuotes = quotes,
+                    isContentReady = true
+                )
+            }
+        }
+    }
 
     private val downloadsCombinedFlow = combine(
         downloadManager.downloadedLessonIds,
@@ -137,10 +148,7 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),
-        initialValue = SheikhUiState(
-            filteredLessons = repository.allLessons,
-            filteredQuotes = repository.quotes
-        )
+        initialValue = SheikhUiState()
     )
 
     fun selectTab(tabIndex: Int) {
@@ -156,7 +164,7 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
             } else {
                 baseLessons.filter {
                     it.title.contains(query, ignoreCase = true) ||
-                            it.description.contains(query, ignoreCase = true)
+                        it.description.contains(query, ignoreCase = true)
                 }
             }
             state.copy(
@@ -175,14 +183,18 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
     fun onSearchQueryChanged(query: String) {
         _uiState.update { state ->
             val category = state.selectedCategory
-            val baseLessons = if (category == LessonCategory.ALL) repository.allLessons else repository.getLessonsByCategory(category)
+            val baseLessons = if (category == LessonCategory.ALL) {
+                repository.allLessons
+            } else {
+                repository.getLessonsByCategory(category)
+            }
             val filtered = if (query.isBlank()) {
                 baseLessons
             } else {
                 baseLessons.filter {
                     it.title.contains(query, ignoreCase = true) ||
-                            it.series.contains(query, ignoreCase = true) ||
-                            it.description.contains(query, ignoreCase = true)
+                        it.series.contains(query, ignoreCase = true) ||
+                        it.description.contains(query, ignoreCase = true)
                 }
             }
             val quotesFiltered = repository.searchQuotes(query)
@@ -221,19 +233,41 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
         } else {
             0L
         }
-        // Apply Smart Rewind if enabled (5 seconds back)
         if (startPos > 5L && uiState.value.userPreferences.smartRewindEnabled) {
             startPos = (startPos - 5L).coerceAtLeast(0L)
         }
 
         val isOffline = uiState.value.downloadedIds.contains(lesson.id)
-        playerManager.playLesson(lesson, startPositionSeconds = startPos, isOffline = isOffline)
+        val localPath = if (isOffline) {
+            uiState.value.downloadedLessons.find { it.lessonId == lesson.id }?.localFilePath
+                ?: downloadManager.getLocalPath(lesson.id)
+        } else {
+            null
+        }
+
+        playerManager.playLesson(
+            lesson = lesson,
+            startPositionSeconds = startPos,
+            isOffline = isOffline && !localPath.isNullOrBlank(),
+            localFilePath = localPath
+        )
     }
 
     fun playLessonAtTimestamp(lessonId: String, timestampSeconds: Long) {
-        val lesson = repository.allLessons.find { it.id == lessonId } ?: repository.allLessons.firstOrNull() ?: return
+        val lesson = repository.getLessonById(lessonId) ?: repository.allLessons.firstOrNull() ?: return
         val isOffline = uiState.value.downloadedIds.contains(lesson.id)
-        playerManager.playLesson(lesson, startPositionSeconds = timestampSeconds, isOffline = isOffline)
+        val localPath = if (isOffline) {
+            uiState.value.downloadedLessons.find { it.lessonId == lesson.id }?.localFilePath
+                ?: downloadManager.getLocalPath(lesson.id)
+        } else {
+            null
+        }
+        playerManager.playLesson(
+            lesson = lesson,
+            startPositionSeconds = timestampSeconds,
+            isOffline = isOffline && !localPath.isNullOrBlank(),
+            localFilePath = localPath
+        )
     }
 
     fun setSettingsOpen(isOpen: Boolean) {
@@ -295,7 +329,7 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
             val result = downloadManager.importDownloads(uri)
             if (result.isSuccess) {
                 val count = result.getOrNull() ?: 0
-                onResult(true, "تم استيراد${count} درس بنجاح")
+                onResult(true, "تم استيراد $count درس بنجاح")
             } else {
                 onResult(false, result.exceptionOrNull()?.message ?: "حدث خطأ أثناء الاستيراد")
             }
@@ -340,29 +374,42 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
 
     fun addBookmark(lessonId: String, timestampSeconds: Long, note: String) {
         viewModelScope.launch {
-            repository.addBookmark(com.example.data.local.BookmarkEntity(lessonId = lessonId, timestampSeconds = timestampSeconds, note = note))
+            repository.addBookmark(
+                com.example.data.local.BookmarkEntity(
+                    lessonId = lessonId,
+                    timestampSeconds = timestampSeconds,
+                    note = note
+                )
+            )
         }
     }
+
     fun deleteBookmark(id: String) {
         viewModelScope.launch { repository.deleteBookmark(id) }
     }
+
     fun getBookmarksForLesson(lessonId: String) = repository.getBookmarksForLesson(lessonId)
 
     fun createPlaylist(name: String) {
-        viewModelScope.launch { repository.addPlaylist(com.example.data.local.PlaylistEntity(name = name)) }
+        viewModelScope.launch {
+            repository.addPlaylist(com.example.data.local.PlaylistEntity(name = name))
+        }
     }
+
     fun deletePlaylist(id: String) {
         viewModelScope.launch { repository.deletePlaylist(id) }
     }
+
     fun addLessonToPlaylist(playlistId: String, lessonId: String) {
         viewModelScope.launch { repository.addLessonToPlaylist(playlistId, lessonId) }
     }
+
     fun removeLessonFromPlaylist(playlistId: String, lessonId: String) {
         viewModelScope.launch { repository.removeLessonFromPlaylist(playlistId, lessonId) }
     }
+
     fun getLessonsInPlaylist(playlistId: String) = repository.getLessonsInPlaylist(playlistId)
 
-    // Quiz Functions
     fun openQuiz(lesson: Lesson) {
         val unified = QuizDataProvider.getUnifiedQuizForLesson(lesson)
         _uiState.update { it.copy(activeQuizLesson = lesson, activeUnifiedQuiz = unified) }
