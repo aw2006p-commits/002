@@ -21,6 +21,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
+import java.io.File
 
 data class PlayerState(
     val currentLesson: Lesson? = null,
@@ -66,6 +67,8 @@ class AudioPlayerManager(
     private var mediaController: MediaController? = null
     private var pendingLessonToPlay: Lesson? = null
     private var pendingStartPos: Long = 0L
+    private var pendingLocalPath: String? = null
+    private var pendingIsOffline: Boolean = false
 
     init {
         val sessionToken = SessionToken(context, ComponentName(context, PlaybackService::class.java))
@@ -76,12 +79,15 @@ class AudioPlayerManager(
                 setupController()
                 pendingLessonToPlay?.let { lesson ->
                     val pos = pendingStartPos
+                    val local = pendingLocalPath
+                    val offline = pendingIsOffline
                     pendingLessonToPlay = null
                     pendingStartPos = 0L
-                    playLesson(lesson, pos)
+                    pendingLocalPath = null
+                    pendingIsOffline = false
+                    playLesson(lesson, pos, offline, local)
                 }
-            } catch (e: Exception) {
-                // Controller connection handled gracefully
+            } catch (_: Exception) {
             }
         }, ContextCompat.getMainExecutor(context))
     }
@@ -106,13 +112,17 @@ class AudioPlayerManager(
             }
 
             override fun onPlayerError(error: androidx.media3.common.PlaybackException) {
-                // If remote audio URL fails, keep playing locally and advance timeline
                 startProgressLoop()
             }
         })
     }
 
-    fun playLesson(lesson: Lesson, startPositionSeconds: Long = 0, isOffline: Boolean = false) {
+    fun playLesson(
+        lesson: Lesson,
+        startPositionSeconds: Long = 0,
+        isOffline: Boolean = false,
+        localFilePath: String? = null
+    ) {
         val current = _playerState.value.currentLesson
         if (current?.id == lesson.id) {
             if (startPositionSeconds > 0) {
@@ -128,7 +138,6 @@ class AudioPlayerManager(
             }
         }
 
-        // Save progress of the current lesson before switching
         if (current != null) {
             saveCurrentProgress()
         }
@@ -149,30 +158,51 @@ class AudioPlayerManager(
         if (controller == null) {
             pendingLessonToPlay = lesson
             pendingStartPos = startPositionSeconds
+            pendingLocalPath = localFilePath
+            pendingIsOffline = isOffline
             return
         }
 
-        if (lesson.audioUrl.isNotBlank()) {
-            try {
-                val metadata = MediaMetadata.Builder()
-                    .setTitle(lesson.title)
-                    .setArtist(lesson.series)
-                    .build()
+        val playbackUri = resolvePlaybackUri(lesson, isOffline, localFilePath)
+        if (playbackUri.isNullOrBlank()) {
+            return
+        }
 
-                val mediaItem = MediaItem.Builder()
-                    .setUri(lesson.audioUrl)
-                    .setMediaId(lesson.id)
-                    .setMediaMetadata(metadata)
-                    .build()
+        try {
+            val metadata = MediaMetadata.Builder()
+                .setTitle(lesson.title)
+                .setArtist(lesson.series)
+                .build()
 
-                controller.setMediaItem(mediaItem, startPositionSeconds * 1000)
-                controller.setPlaybackSpeed(_playerState.value.playbackSpeed)
-                controller.prepare()
-                controller.play()
-            } catch (e: Exception) {
-                // Audio URL fallback keeps playing locally
+            val mediaItem = MediaItem.Builder()
+                .setUri(playbackUri)
+                .setMediaId(lesson.id)
+                .setMediaMetadata(metadata)
+                .build()
+
+            controller.setMediaItem(mediaItem, startPositionSeconds * 1000)
+            controller.setPlaybackSpeed(_playerState.value.playbackSpeed)
+            controller.prepare()
+            controller.play()
+        } catch (_: Exception) {
+        }
+    }
+
+    private fun resolvePlaybackUri(
+        lesson: Lesson,
+        isOffline: Boolean,
+        localFilePath: String?
+    ): String? {
+        if (isOffline) {
+            val path = localFilePath?.takeIf { it.isNotBlank() }
+            if (path != null) {
+                val file = File(path)
+                if (file.exists() && file.length() > 1024L) {
+                    return file.toURI().toString()
+                }
             }
         }
+        return lesson.audioUrl.takeIf { it.isNotBlank() }
     }
 
     fun togglePlayPause() {
@@ -202,8 +232,7 @@ class AudioPlayerManager(
         _playerState.update { it.copy(currentPositionSeconds = clamped) }
         try {
             mediaController?.seekTo(clamped * 1000)
-        } catch (e: Exception) {
-            // Handled
+        } catch (_: Exception) {
         }
         saveCurrentProgress()
     }
@@ -222,7 +251,6 @@ class AudioPlayerManager(
         sleepTimerJob?.cancel()
         _playerState.update { it.copy(sleepTimerMinutesLeft = minutes) }
 
-        // Send command to the persistent background service
         mediaController?.let { controller ->
             val args = android.os.Bundle().apply {
                 putInt("minutes", minutes ?: 0)
@@ -231,7 +259,6 @@ class AudioPlayerManager(
             controller.sendCustomCommand(command, args)
         }
 
-        // Keep local countdown for UI display
         if (minutes != null && minutes > 0) {
             sleepTimerJob = scope.launch {
                 var remainingMinutes = minutes
@@ -254,8 +281,7 @@ class AudioPlayerManager(
         try {
             mediaController?.stop()
             mediaController?.clearMediaItems()
-        } catch (e: Exception) {
-            // Handled
+        } catch (_: Exception) {
         }
         stopProgressLoop()
         _playerState.update { PlayerState() }
@@ -275,19 +301,24 @@ class AudioPlayerManager(
 
                 if (controller != null && controller.isPlaying && controller.duration > 0) {
                     newPos = (controller.currentPosition / 1000).coerceAtLeast(0)
+                    val realDuration = (controller.duration / 1000).coerceAtLeast(1)
+                    if (realDuration != state.durationSeconds) {
+                        _playerState.update { it.copy(durationSeconds = realDuration) }
+                    }
                 } else {
                     newPos = (newPos + 1).coerceAtMost(state.durationSeconds.coerceAtLeast(1L))
                 }
 
                 _playerState.update { it.copy(currentPositionSeconds = newPos) }
-                
+
                 tickAccumulator++
                 if (tickAccumulator >= 10L) {
                     onListeningTick(tickAccumulator)
                     tickAccumulator = 0L
                 }
 
-                if (state.durationSeconds > 0 && newPos >= state.durationSeconds) {
+                val duration = _playerState.value.durationSeconds
+                if (duration > 0 && newPos >= duration) {
                     saveCurrentProgress(isCompleted = true)
                     pause()
                     break
