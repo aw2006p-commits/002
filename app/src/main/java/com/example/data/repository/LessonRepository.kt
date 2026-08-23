@@ -1,21 +1,87 @@
 package com.example.data.repository
 
+import android.content.Context
 import com.example.data.local.FavoriteEntity
 import com.example.data.local.LessonDao
 import com.example.data.local.PlayHistoryEntity
 import com.example.data.model.Lesson
 import com.example.data.model.LessonCategory
+import com.example.data.model.SeriesInfo
 import com.example.data.model.SheikhData
 import com.example.data.model.SheikhQuote
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-class LessonRepository(private val lessonDao: LessonDao) {
+/**
+ * مستودع المحتوى والبيانات الدائمة.
+ * المصدر الأساسي: sheikh_samir_database.json
+ * الاحتياطي الآمن: SheikhData (MockData) إن فشل التحميل أو كان فارغاً.
+ */
+class LessonRepository(
+    private val lessonDao: LessonDao,
+    context: Context
+) {
+    private val appContext = context.applicationContext
 
-    val allLessons: List<Lesson> = SheikhData.allLessons
-    val quotes: List<SheikhQuote> = SheikhData.quotes
-    val seriesList = SheikhData.seriesList
-    val heroLesson: Lesson = SheikhData.featuredHeroLesson
+    private val jsonLessons: List<Lesson> by lazy {
+        runCatching {
+            ScholarJsonDataLoader.getAllLessonsAsUiModel(appContext)
+        }.getOrDefault(emptyList())
+    }
+
+    private val jsonQuotes: List<SheikhQuote> by lazy {
+        runCatching {
+            val db = ScholarJsonDataLoader.loadDatabase(appContext)
+            db.quotes.map { q ->
+                SheikhQuote(
+                    id = q.id,
+                    quote = q.quote,
+                    context = q.sourceSeries,
+                    tags = q.tags,
+                    lessonId = q.lessonId.takeIf { it.isNotBlank() }
+                )
+            }
+        }.getOrDefault(emptyList())
+    }
+
+    private val jsonSeries: List<SeriesInfo> by lazy {
+        runCatching {
+            val db = ScholarJsonDataLoader.loadDatabase(appContext)
+            db.seriesList.map { s ->
+                val totalSec = s.lessons.sumOf { it.durationSeconds }
+                val hours = totalSec / 3600
+                val mins = (totalSec % 3600) / 60
+                val durationLabel = when {
+                    hours > 0 && mins > 0 -> "$hours ساعة و $mins دقيقة"
+                    hours > 0 -> "$hours ساعة"
+                    else -> "$mins دقيقة"
+                }
+                SeriesInfo(
+                    title = s.title,
+                    lessonsCount = s.totalEpisodes.coerceAtLeast(s.lessons.size),
+                    totalDuration = durationLabel,
+                    description = s.description,
+                    iconEmoji = s.coverEmoji.ifBlank { "🎙️" }
+                )
+            }
+        }.getOrDefault(emptyList())
+    }
+
+    val allLessons: List<Lesson> by lazy {
+        if (jsonLessons.isNotEmpty()) jsonLessons else SheikhData.allLessons
+    }
+
+    val quotes: List<SheikhQuote> by lazy {
+        if (jsonQuotes.isNotEmpty()) jsonQuotes else SheikhData.quotes
+    }
+
+    val seriesList: List<SeriesInfo> by lazy {
+        if (jsonSeries.isNotEmpty()) jsonSeries else SheikhData.seriesList
+    }
+
+    val heroLesson: Lesson by lazy {
+        allLessons.firstOrNull { it.isFeatured } ?: allLessons.firstOrNull() ?: SheikhData.featuredHeroLesson
+    }
 
     val favoriteIds: Flow<Set<String>> = lessonDao.getFavoriteIds().map { it.toSet() }
 
@@ -46,9 +112,10 @@ class LessonRepository(private val lessonDao: LessonDao) {
         val cleanQuery = query.trim().lowercase()
         return allLessons.filter { lesson ->
             lesson.title.lowercase().contains(cleanQuery) ||
-                    lesson.series.lowercase().contains(cleanQuery) ||
-                    lesson.description.lowercase().contains(cleanQuery) ||
-                    lesson.category.displayName.lowercase().contains(cleanQuery)
+                lesson.series.lowercase().contains(cleanQuery) ||
+                lesson.description.lowercase().contains(cleanQuery) ||
+                lesson.category.displayName.lowercase().contains(cleanQuery) ||
+                lesson.tags.any { it.lowercase().contains(cleanQuery) }
         }
     }
 
@@ -57,8 +124,8 @@ class LessonRepository(private val lessonDao: LessonDao) {
         val cleanQuery = query.trim().lowercase()
         return quotes.filter { quote ->
             quote.quote.lowercase().contains(cleanQuery) ||
-                    quote.context.lowercase().contains(cleanQuery) ||
-                    quote.tags.any { it.lowercase().contains(cleanQuery) }
+                quote.context.lowercase().contains(cleanQuery) ||
+                quote.tags.any { it.lowercase().contains(cleanQuery) }
         }
     }
 
@@ -91,13 +158,11 @@ class LessonRepository(private val lessonDao: LessonDao) {
         lessonDao.deletePlayHistory(lessonId)
     }
 
-    // Bookmarks
     fun getBookmarksForLesson(lessonId: String) = lessonDao.getBookmarksForLesson(lessonId)
     fun getAllBookmarks() = lessonDao.getAllBookmarks()
     suspend fun addBookmark(bookmark: com.example.data.local.BookmarkEntity) = lessonDao.addBookmark(bookmark)
     suspend fun deleteBookmark(bookmarkId: String) = lessonDao.deleteBookmark(bookmarkId)
 
-    // Playlists
     fun getPlaylists() = lessonDao.getPlaylists()
     fun getLessonsInPlaylist(playlistId: String) = lessonDao.getLessonsInPlaylist(playlistId)
     suspend fun addPlaylist(playlist: com.example.data.local.PlaylistEntity) = lessonDao.addPlaylist(playlist)
@@ -105,9 +170,9 @@ class LessonRepository(private val lessonDao: LessonDao) {
     suspend fun addLessonToPlaylist(playlistId: String, lessonId: String) {
         lessonDao.addLessonToPlaylist(com.example.data.local.PlaylistLessonCrossRef(playlistId, lessonId))
     }
-    suspend fun removeLessonFromPlaylist(playlistId: String, lessonId: String) = lessonDao.removeLessonFromPlaylist(playlistId, lessonId)
+    suspend fun removeLessonFromPlaylist(playlistId: String, lessonId: String) =
+        lessonDao.removeLessonFromPlaylist(playlistId, lessonId)
 
-    // Daily Stats
     suspend fun recordListeningTick(seconds: Long = 1) {
         val today = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.US).format(java.util.Date())
         val updatedRows = lessonDao.incrementListeningSeconds(today, seconds)
@@ -118,7 +183,6 @@ class LessonRepository(private val lessonDao: LessonDao) {
     }
     fun getLast30DaysStats() = lessonDao.getLast30DaysStats()
 
-    // Quiz Results
     fun getAllQuizResults() = lessonDao.getAllQuizResults()
     fun getQuizResult(lessonId: String) = lessonDao.getQuizResult(lessonId)
     suspend fun saveQuizResult(result: com.example.data.local.QuizResultEntity) = lessonDao.saveQuizResult(result)
