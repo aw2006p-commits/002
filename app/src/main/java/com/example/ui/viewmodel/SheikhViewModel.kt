@@ -36,6 +36,8 @@ data class SheikhUiState(
     val selectedSeries: SeriesInfo? = null,
     val searchQuery: String = "",
     val quoteQuery: String = "",
+    val allLessons: List<Lesson> = emptyList(),
+    val seriesList: List<SeriesInfo> = emptyList(),
     val filteredLessons: List<Lesson> = emptyList(),
     val filteredQuotes: List<SheikhQuote> = emptyList(),
     val isContentReady: Boolean = false,
@@ -92,11 +94,13 @@ class SheikhViewModel(application: Application) : AndroidViewModel(application) 
 
     init {
         viewModelScope.launch {
-            val (lessons, quotes) = withContext(Dispatchers.Default) {
-                repository.allLessons to repository.quotes
+            val (lessons, quotes, series) = withContext(Dispatchers.Default) {
+                Triple(repository.allLessons, repository.quotes, repository.seriesList)
             }
             _uiState.update {
                 it.copy(
+                    allLessons = lessons,
+                    seriesList = series,
                     filteredLessons = lessons,
                     filteredQuotes = quotes,
                     isContentReady = true
