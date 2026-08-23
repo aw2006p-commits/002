@@ -1,20 +1,14 @@
 package com.example.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.example.data.local.AppThemeMode
-import com.example.data.local.UserPreferences
-import com.example.data.local.UiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
+data class UiStateData(
+    val message: String = "Welcome"
+)
+
 class SheikhViewModel : ViewModel() {
-    private val _uiState = MutableStateFlow(
-        UiState(
-            userPreferences = UserPreferences(
-                themeMode = AppThemeMode.SYSTEM,
-                fontScale = 1.0f
-            )
-        )
-    )
-    val uiState: StateFlow<UiState> = _uiState
+    private val _uiState = MutableStateFlow(UiStateData())
+    val uiState: StateFlow<UiStateData> = _uiState
 }
