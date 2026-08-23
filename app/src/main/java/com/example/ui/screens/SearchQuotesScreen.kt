@@ -66,7 +66,6 @@ import androidx.compose.ui.unit.sp
 import com.example.data.local.BookmarkEntity
 import com.example.data.model.Lesson
 import com.example.data.model.LessonCategory
-import com.example.data.model.SheikhData
 import com.example.data.model.SheikhQuote
 import com.example.player.PlayerState
 import com.example.ui.components.LessonItemCard
@@ -375,7 +374,7 @@ fun SearchQuotesScreen(
                 }
             } else {
                 items(filteredBookmarks, key = { it.id }) { bookmark ->
-                    val relatedLesson = SheikhData.allLessons.find { it.id == bookmark.lessonId }
+                    val relatedLesson = uiState.allLessons.find { it.id == bookmark.lessonId }
                     Card(
                         shape = RoundedCornerShape(16.dp),
                         colors = CardDefaults.cardColors(containerColor = appColors.surface),

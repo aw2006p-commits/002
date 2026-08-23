@@ -58,7 +58,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.local.PlayHistoryEntity
 import com.example.data.model.Lesson
-import com.example.data.model.SheikhData
 import com.example.download.LessonDownloadManager
 import com.example.player.PlayerState
 import com.example.ui.components.LessonItemCard
@@ -89,11 +88,11 @@ fun FavoritesScreen(
     var selectedTab by remember { mutableIntStateOf(0) } // 0: المفضلة, 1: التحميلات (بدون نت), 2: سجل الاستماع
 
     val favoriteLessons = remember(uiState.favoriteIds) {
-        SheikhData.allLessons.filter { uiState.favoriteIds.contains(it.id) }
+        uiState.allLessons.filter { uiState.favoriteIds.contains(it.id) }
     }
 
     val downloadedLessons = remember(uiState.downloadedIds) {
-        SheikhData.allLessons.filter { uiState.downloadedIds.contains(it.id) }
+        uiState.allLessons.filter { uiState.downloadedIds.contains(it.id) }
     }
 
     val totalBytesUsed = remember(uiState.downloadedLessons) {
@@ -364,7 +363,7 @@ fun FavoritesScreen(
                     }
                 } else {
                     items(uiState.playHistory, key = { it.lessonId }) { historyItem ->
-                        val lesson = SheikhData.allLessons.find { it.id == historyItem.lessonId }
+                        val lesson = uiState.allLessons.find { it.id == historyItem.lessonId }
                         if (lesson != null) {
                             HistoryItemCard(
                                 lesson = lesson,

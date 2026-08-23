@@ -53,7 +53,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.model.Lesson
 import com.example.data.model.LessonCategory
-import com.example.data.model.SheikhData
 import com.example.ui.components.HeroBanner
 import com.example.ui.components.LessonItemCard
 import com.example.ui.theme.NaturalAccentGold
@@ -133,7 +132,7 @@ fun LessonsScreen(
         )
     }
 
-    val allLessonsList: List<Lesson> = SheikhData.allLessons
+    val allLessonsList: List<Lesson> = uiState.allLessons
 
     val popularTags = remember {
         listOf("فقه", "تزكية", "عقيدة", "سيرة", "تفسير", "رقائق", "غزوات", "أذكار", "توكل", "دعاء", "أخلاق")
@@ -838,10 +837,14 @@ fun LessonsScreen(
                         verticalArrangement = Arrangement.spacedBy(14.dp)
                     ) {
                         item {
-                            HeroBanner(
-                                lesson = SheikhData.featuredHeroLesson,
-                                onPlayClick = onPlayLesson
-                            )
+                            val heroLesson = uiState.allLessons.firstOrNull { it.isFeatured }
+                                ?: uiState.allLessons.firstOrNull()
+                            if (heroLesson != null) {
+                                HeroBanner(
+                                    lesson = heroLesson,
+                                    onPlayClick = onPlayLesson
+                                )
+                            }
                         }
 
                         item {
