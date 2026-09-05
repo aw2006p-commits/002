@@ -63,7 +63,7 @@ fun MyApplicationTheme(
     val colorScheme = remember(darkTheme, dynamicColor) {
         when {
             dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-                // Dynamic colors يُحسبها في Composable (غير آمن)
+                // Dynamic colors يُ��سبها في Composable (غير آمن)
                 // لذا نستخدم الألوان الثابتة بدلاً منها
                 if (darkTheme) DarkColorScheme else LightColorScheme
             }
@@ -79,31 +79,15 @@ fun MyApplicationTheme(
     // 🛡️ تحميل الخط مرة واحدة فقط
     val fontFamily = remember { TajawalFontFamily }
 
-    try {
-        MaterialTheme(
-            colorScheme = colorScheme,
-            typography = Typography
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = Typography
+    ) {
+        CompositionLocalProvider(
+            LocalTextStyle provides TextStyle(fontFamily = fontFamily),
+            LocalAppColors provides appColors,
+            LocalFontScale provides fontScale
         ) {
-            CompositionLocalProvider(
-                LocalTextStyle provides TextStyle(fontFamily = fontFamily),
-                LocalAppColors provides appColors,
-                LocalFontScale provides fontScale
-            ) {
-                content()
-            }
-        }
-    } catch (e: Exception) {
-        Log.e(TAG, "❌ Error in theme composition", e)
-        // Fallback: عرض المحتوى بدون theme مخصص
-        try {
-            MaterialTheme(
-                colorScheme = colorScheme
-            ) {
-                content()
-            }
-        } catch (fallbackError: Exception) {
-            Log.e(TAG, "❌ Even fallback theme failed", fallbackError)
-            // إذا فشل كل شيء، عرض المحتوى بدون theme
             content()
         }
     }
