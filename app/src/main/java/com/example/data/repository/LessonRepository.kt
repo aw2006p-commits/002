@@ -6,6 +6,7 @@ import com.example.data.local.LessonDao
 import com.example.data.local.PlayHistoryEntity
 import com.example.data.model.Lesson
 import com.example.data.model.LessonCategory
+import com.example.data.model.RealLessonsData
 import com.example.data.model.SeriesInfo
 import com.example.data.model.SheikhData
 import com.example.data.model.SheikhQuote
@@ -14,8 +15,8 @@ import kotlinx.coroutines.flow.map
 
 /**
  * مستودع المحتوى والبيانات الدائمة.
- * المصدر الأساسي: sheikh_samir_database.json
- * الاحتياطي الآمن: SheikhData (MockData) إن فشل التحميل أو كان فارغاً.
+ * المصدر الأساسي: البيانات الحقيقية من Archive.org (RealLessonsData)
+ * الاحتياطي الآمن: SheikhData (MockData) إن فشل التحميل
  */
 class LessonRepository(
     private val lessonDao: LessonDao,
@@ -23,60 +24,17 @@ class LessonRepository(
 ) {
     private val appContext = context.applicationContext
 
-    private val jsonLessons: List<Lesson> by lazy {
-        runCatching {
-            ScholarJsonDataLoader.getAllLessonsAsUiModel(appContext)
-        }.getOrDefault(emptyList())
-    }
-
-    private val jsonQuotes: List<SheikhQuote> by lazy {
-        runCatching {
-            val db = ScholarJsonDataLoader.loadDatabase(appContext)
-            db.quotes.map { q ->
-                SheikhQuote(
-                    id = q.id,
-                    quote = q.quote,
-                    context = q.sourceSeries,
-                    tags = q.tags,
-                    lessonId = q.lessonId.takeIf { it.isNotBlank() }
-                )
-            }
-        }.getOrDefault(emptyList())
-    }
-
-    private val jsonSeries: List<SeriesInfo> by lazy {
-        runCatching {
-            val db = ScholarJsonDataLoader.loadDatabase(appContext)
-            db.seriesList.map { s ->
-                val totalSec = s.lessons.sumOf { it.durationSeconds }
-                val hours = totalSec / 3600
-                val mins = (totalSec % 3600) / 60
-                val durationLabel = when {
-                    hours > 0 && mins > 0 -> "$hours ساعة و $mins دقيقة"
-                    hours > 0 -> "$hours ساعة"
-                    else -> "$mins دقيقة"
-                }
-                SeriesInfo(
-                    title = s.title,
-                    lessonsCount = s.totalEpisodes.coerceAtLeast(s.lessons.size),
-                    totalDuration = durationLabel,
-                    description = s.description,
-                    iconEmoji = s.coverEmoji.ifBlank { "🎙️" }
-                )
-            }
-        }.getOrDefault(emptyList())
-    }
-
+    // استخدام البيانات الحقيقية من Archive.org بدل البيانات الوهمية
     val allLessons: List<Lesson> by lazy {
-        if (jsonLessons.isNotEmpty()) jsonLessons else SheikhData.allLessons
+        RealLessonsData.allLessons.ifEmpty { SheikhData.allLessons }
     }
 
     val quotes: List<SheikhQuote> by lazy {
-        if (jsonQuotes.isNotEmpty()) jsonQuotes else SheikhData.quotes
+        RealLessonsData.quotesList.ifEmpty { SheikhData.quotes }
     }
 
     val seriesList: List<SeriesInfo> by lazy {
-        if (jsonSeries.isNotEmpty()) jsonSeries else SheikhData.seriesList
+        RealLessonsData.seriesList.ifEmpty { SheikhData.seriesList }
     }
 
     val heroLesson: Lesson by lazy {
@@ -123,9 +81,9 @@ class LessonRepository(
         if (query.isBlank()) return quotes
         val cleanQuery = query.trim().lowercase()
         return quotes.filter { quote ->
-            quote.quote.lowercase().contains(cleanQuery) ||
-                quote.context.lowercase().contains(cleanQuery) ||
-                quote.tags.any { it.lowercase().contains(cleanQuery) }
+            quote.text.lowercase().contains(cleanQuery) ||
+                quote.source.lowercase().contains(cleanQuery) ||
+                quote.category.lowercase().contains(cleanQuery)
         }
     }
 
