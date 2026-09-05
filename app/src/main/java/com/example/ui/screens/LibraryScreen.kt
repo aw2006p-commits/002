@@ -72,8 +72,8 @@ data class SeriesProgress(
     val percentage: Int
 )
 
-fun calculateSeriesProgress(seriesTitle: String, playHistory: List<PlayHistoryEntity>): SeriesProgress {
-    val seriesLessons = uiState.allLessons.filter { it.series == seriesTitle }
+fun calculateSeriesProgress(seriesTitle: String, allLessons: List<Lesson>, playHistory: List<PlayHistoryEntity>): SeriesProgress {
+    val seriesLessons = allLessons.filter { it.series == seriesTitle }
     val totalCount = if (seriesLessons.isNotEmpty()) seriesLessons.size else 1
     val historyMap = playHistory.associateBy { it.lessonId }
     
@@ -118,7 +118,7 @@ fun LibraryScreen(
 
     val seriesProgressMap = remember(uiState.playHistory) {
         uiState.seriesList.associate { series ->
-            series.title to calculateSeriesProgress(series.title, uiState.playHistory)
+            series.title to calculateSeriesProgress(series.title, uiState.allLessons, uiState.playHistory)
         }
     }
 
@@ -196,7 +196,7 @@ fun LibraryScreen(
             // Series Detail Header with Big Progress Bar
             val seriesInfo = uiState.seriesList.find { it.title == selectedSeriesTitle }
             val seriesLessons = uiState.allLessons.filter { it.series == selectedSeriesTitle }
-            val progress = seriesProgressMap[selectedSeriesTitle] ?: calculateSeriesProgress(selectedSeriesTitle ?: "", uiState.playHistory)
+            val progress = seriesProgressMap[selectedSeriesTitle] ?: calculateSeriesProgress(selectedSeriesTitle ?: "", uiState.allLessons, uiState.playHistory)
 
             if (seriesInfo != null) {
                 item {
@@ -519,7 +519,7 @@ fun SeriesDetailHeaderCard(
 
                     Text(
                         text = when {
-                            isCompleted -> "🏆 هنيئا لك! أتممت الاستماع لهذه السلسلة المباركة بالكامل."
+                            isCompleted -> "🏆 هنيئا لك! أتممت الاس��ماع لهذه السلسلة المباركة بالكامل."
                             hasStarted -> "🌿 واصل الاستماع واحرص على قيد الفوائد والعمل بالعلم."
                             else -> "🚀 ابدأ الآن بالاستماع إلى الدرس الأول وتتبع إنجازك خطوة بخطوة."
                         },
