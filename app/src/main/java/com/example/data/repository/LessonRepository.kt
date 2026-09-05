@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.map
 /**
  * مستودع المحتوى والبيانات الدائمة.
  * المصدر الأساسي: البيانات الحقيقية من Archive.org (RealLessonsData)
- * الاحتياطي الآمن: SheikhData (MockData) إن فشل التحميل
+ * الاحتياطي الآمن: SheikhData (MockData)
  */
 class LessonRepository(
     private val lessonDao: LessonDao,
@@ -24,7 +24,7 @@ class LessonRepository(
 ) {
     private val appContext = context.applicationContext
 
-    // استخدام البيانات الحقيقية من Archive.org بدل البيانات الوهمية
+    // استخدام البيانات الحقيقية من Archive.org
     val allLessons: List<Lesson> by lazy {
         RealLessonsData.allLessons.ifEmpty { SheikhData.allLessons }
     }
@@ -81,9 +81,9 @@ class LessonRepository(
         if (query.isBlank()) return quotes
         val cleanQuery = query.trim().lowercase()
         return quotes.filter { quote ->
-            quote.text.lowercase().contains(cleanQuery) ||
-                quote.source.lowercase().contains(cleanQuery) ||
-                quote.category.lowercase().contains(cleanQuery)
+            quote.quote.lowercase().contains(cleanQuery) ||
+                quote.context.lowercase().contains(cleanQuery) ||
+                quote.tags.any { it.lowercase().contains(cleanQuery) }
         }
     }
 
